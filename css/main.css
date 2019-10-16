@@ -110,7 +110,7 @@ img {
                 HEADER
 --------------------------------------------*/
 .master__header {
-    background-image: url(../img/header-bg.svg);
+    background-image: url(../img/main-bg.svg);
     background-size: cover;
     height: 85vh;
 }
@@ -712,6 +712,20 @@ img {
     }
     }
 }
+
+/*--------------------------------------------
+            Blogs Page
+--------------------------------------------*/
+
+.blog {
+    background-image: url(../img/main-bg.svg);
+    background-size: cover;
+    height: 60vh;
+}
+
+
+
+
 
 /*--------------------------------------------
             Footer
