@@ -491,32 +491,6 @@ img {
     transform: translateY(-.1rem);
 }
 
-
-/*--------------------------------------------
-            Footer
---------------------------------------------*/
-
-.master-footer {
-    background-image: url(../img/footer-bg.svg);
-    background-size: cover;
-}
-.master-footer__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 20vh;
-}
-
-.master-footer__text {
-    font-size: 3rem;
-    color: var(--color-grey-light);
-    text-transform: uppercase;
-}
-
-/*--------------------------------------------
-            Footer
---------------------------------------------*/
-
 /*--------------------------------------------
             CV Page
 --------------------------------------------*/
@@ -737,6 +711,27 @@ img {
         font-size: 1.5rem;
     }
     }
+}
+
+/*--------------------------------------------
+            Footer
+--------------------------------------------*/
+
+.master-footer {
+    background-image: url(../img/footer-bg.svg);
+    background-size: cover;
+}
+.master-footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.master-footer__text {
+    font-size: 3rem;
+    color: var(--color-grey-light);
+    text-transform: uppercase;
 }
 
 
