@@ -17,6 +17,7 @@ body {
 :root {
     --color-primary: rgb(16, 29, 44);
     --color-secondary: rgb(136, 166, 183);
+    --color-image-tint: rgba(16,29,44,0.5);
 
     --color-primary-gradient: linear-gradient(to right, rgba(16.29,44,90), rgba(136,166,183,.8));
 
@@ -723,9 +724,89 @@ img {
     height: 60vh;
 }
 
+.blogs {
+    padding: 2rem;
+}
 
+.blogs__cards {
+    list-style: none;
+}
 
+.blogs__card-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 
+    margin: 3rem 0;
+    background-image: var(--color-primary-gradient);
+}
+
+.blogs__photo {
+    grid-column: 1 / span 2;
+    position: relative;
+}
+
+/*Color overlay for images */
+.blogs__photo::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-image-tint);
+}
+
+.blogs__photo-link {
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+}
+
+.blogs__photo img {
+    height: auto;
+    display: block;
+}
+
+.blogs__intro-title {
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.blogs__intro-title h2 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    color: var(--color-grey-light);
+    text-transform: uppercase;
+}
+
+.blogs__intro {
+    grid-column: 1 / span 2;
+    padding: 3rem 1rem;
+    color: var(--color-grey-light);
+    font-size: 1.6rem;
+}
+
+.blogs__credit-person {
+    color: var(--color-grey-light-2);
+    line-height: 1.2;
+}
+
+.blogs__btn {
+    grid-column: 1 / span 2;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+}
+
+.blogs__btn:hover,
+.blogs__btn:focus {
+    transform: unset;
+}
 
 /*--------------------------------------------
             Footer
