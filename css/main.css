@@ -18,6 +18,7 @@ body {
     --color-primary: rgb(16, 29, 44);
     --color-secondary: rgb(136, 166, 183);
     --color-image-tint: rgba(16,29,44,0.5);
+    --color-primary-lighter: rgba(16, 29, 44, .9);
 
     --color-primary-gradient: linear-gradient(to right, rgba(16.29,44,90), rgba(136,166,183,.8));
 
@@ -730,6 +731,11 @@ img {
 
 .blogs__cards {
     list-style: none;
+
+    display: grid;
+    /* Makes card layout responsive, no need for media queries */
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-gap: 10rem;
 }
 
 .blogs__card-item {
@@ -738,7 +744,7 @@ img {
     justify-items: center;
 
     margin: 3rem 0;
-    background-image: var(--color-primary-gradient);
+    background-color: var(--color-primary-lighter);
 }
 
 .blogs__photo {
@@ -778,7 +784,7 @@ img {
 }
 
 .blogs__intro-title h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-bottom: 1.5rem;
     color: var(--color-grey-light);
     text-transform: uppercase;
@@ -786,9 +792,10 @@ img {
 
 .blogs__intro {
     grid-column: 1 / span 2;
-    padding: 3rem 1rem;
+    padding: 5rem 1rem;
     color: var(--color-grey-light);
     font-size: 1.6rem;
+    letter-spacing: .1rem;
 }
 
 .blogs__credit-person {
