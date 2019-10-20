@@ -734,16 +734,16 @@ img {
 
     display: grid;
     /* Makes card layout responsive, no need for media queries */
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 10rem;
 }
 
 .blogs__card-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    align-items: flex-start;
 
-    margin: 3rem 0;
+    margin: auto 0;
     background-color: var(--color-primary-lighter);
 }
 
@@ -791,11 +791,23 @@ img {
 }
 
 .blogs__intro {
+    position: relative;
     grid-column: 1 / span 2;
     padding: 5rem 1rem;
     color: var(--color-grey-light);
     font-size: 1.6rem;
     letter-spacing: .1rem;
+}
+
+.blogs__entry {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+.blogs__entry-date {
+    font-size: 1rem;
+    font-style: italic;
 }
 
 .blogs__credit-person {
