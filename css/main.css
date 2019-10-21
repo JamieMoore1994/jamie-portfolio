@@ -28,8 +28,14 @@ body {
     --color-grey-dark: #595959;
 
     /* Complimentary Colours */
-    --color-gold-primary: #c69963;
-    --color-gold-darker: #8a6b45;
+    --color-gold-primary: #8A6333;
+    --color-gold-darker: #73532B;
+
+    --color-button-background: #8A6333;
+    --color-button-text: #ffffff;
+
+    --color-blog-buttons: #e3e7f1;
+    --color-button-hover: #C6CEE2;
 }
 
 img {
@@ -89,11 +95,12 @@ img {
     border-radius: 100px;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: var(--color-gold-primary);
-    color: var(--color-grey-light);
+    background-color: var(--color-button-background);
+    color: var(--color-button-text);
     padding: 1.3rem 2rem;
     cursor: pointer;
     font-weight: 700;
+    transition: all 200ms ease-in;
 }
 
 .btn:hover,
@@ -868,6 +875,8 @@ img {
 }
 
 .blogs__btn {
+    background-color: var(--color-blog-buttons);
+    color: var(--color-primary);
     grid-column: 1 / span 2;
     width: 100%;
     text-align: center;
@@ -878,6 +887,7 @@ img {
 
 .blogs__btn:hover,
 .blogs__btn:focus {
+    background-color: var(--color-button-hover);
     transform: unset;
 }
 
