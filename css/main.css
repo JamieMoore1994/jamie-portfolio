@@ -981,16 +981,23 @@ img {
 
 .industry__references-item {
     font-size: 1.2rem;
-    color: var(--color-gold-darker);
+    color: var(--color-primary);
     padding: 1rem 0;
 }
 
 .industry__references-item a {
-    color: var(--color-gold-darker);
+    color: var(--color-primary);
 }
 
-.industry__link-pdf {
-    margin-right: 10rem;
+.blog__buttons {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__btn {
+    font-size: 1.4rem;
+    padding: 1.5rem;
 }
 
 
