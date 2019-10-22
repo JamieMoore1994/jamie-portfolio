@@ -29,7 +29,7 @@ body {
     --color-image-tint: rgba(16,29,44,0.5);
     --color-primary-lighter: rgba(16, 29, 44, .9);
 
-    --color-primary-gradient: linear-gradient(to right, rgba(16.29,44,90), rgba(136,166,183,.8));
+    --color-primary-gradient: linear-gradient(to right, rgba(16,29,44,.9), rgba(136,166,183,.9));
 
     /* Greys */
     --color-grey-light: #f9f7f6;
@@ -124,7 +124,6 @@ img {
 .btn:active {
     transform: translateY(-.1rem);
 }
-
 
 /*--------------------------------------------
                 HEADER
@@ -971,8 +970,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 }
 
 .industry__reference {
-    background-color: var(--color-grey-light-2);
-    padding: 2rem;
+    margin: 2rem 0 4rem 0;
 }
 
 .industry__references {
@@ -980,6 +978,8 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     justify-content: center;
     flex-direction: column;
     list-style: none;
+    background-color: var(--color-grey-light-2);
+    padding: 2rem;
 }
 
 .industry__references-item {
@@ -1092,8 +1092,9 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 --------------------------------------------*/
 
 .master-footer {
-    background-image: url(../img/footer-bg.svg);
+    background-image: var(--color-primary-gradient);
     background-size: cover;
+    position: relative;
 }
 .master-footer__container {
     display: flex;
@@ -1106,6 +1107,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     padding: 1rem 0;
     color: var(--color-grey-light);
     text-transform: uppercase;
+}
+
+.social__media {
+    padding-bottom: 3rem;
 }
 
 .social__title {
@@ -1131,7 +1136,8 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 .social__icon {
     display: inline-block;
     color: var(--color-grey-light);
-    padding: 1.2rem;
+    padding: 2rem;
+    margin: 0 2rem;
     border-radius: 50%;
     transition: all 200ms ease-in;
 }
@@ -1146,6 +1152,12 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 
 .social__icon:active {
     transform: translateY(-.1rem);
+}
+
+.back-top {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
 }
 
 
