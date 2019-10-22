@@ -786,6 +786,11 @@ img {
     height: 100%;
 }
 
+.blog-links:hover,
+.blog-links:focus {
+    transform: translateY(-1rem);
+}
+
 .blogs__photo {
     position: relative;
 }
