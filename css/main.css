@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 :root {
@@ -939,32 +939,55 @@ img {
 .industry__blog-title {
     font-size: 2.5rem;
     line-height: 1.2;
-    padding-bottom: 2rem;
+    padding-bottom: .8rem;
 }
 
 .industry__brexit-img {
-    margin-bottom: 2rem;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    shape-outside: url(../img/james-claffey-beUtKWoCdaM-unsplash.JPG);
+    shape-margin: 2vw;
 }
 
-.industry__text-container p {
+.industry p {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--color-grey-dark)
+    color: var(--color-grey-dark);
+    padding: .8rem 0;
 }
 
 .industry__sub-titles {
     font-size: 2rem;
-    padding: 1.5rem 0 .7rem 0;
+    padding: 1.5rem 0 0 0;
     text-transform: uppercase;
     color: var(--color-gold-primary);
 }
 
-.industry__job-roles {
-    margin: 1rem 0;
+.industry__business {
+    display: flex;
 }
 
-.industry__job-roles figure {
-    padding: 1.4rem 0;
+.skills__report {
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    margin-top: 1rem;
+    shape-margin: 1vw;
+}
+
+.industry__job-roles {
+    padding: .8rem 0;
+}
+
+.industry__job-roles img {
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.5);
+}
+
+
+.industry__img-caption {
+    font-size: 1.1rem;
+    color: var(--color-gold-darker);
+    font-style: italic;
 }
 
 .industry__reference {
@@ -989,17 +1012,107 @@ img {
     color: var(--color-primary);
 }
 
-.blog__buttons {
+.industry__blog-buttons {
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
 }
 
-.blog__btn {
-    font-size: 1.4rem;
-    padding: 1.5rem;
+.industry__blog-btn {
+    font-size: 1rem;
 }
 
+.blog__links {
+    color: var(--color-gold-darker);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 45em) {
+    .industry__title {
+        font-size: 5rem;
+    }
+
+    .industry__intro {
+        max-width: 65em;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .industry__intro h2 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        font-size: 3.3rem;
+    }
+
+    .industry p {
+        font-size: 1.8rem;
+    }
+
+    .industry__intro p {
+        grid-column: 1 / span 2;
+        grid-row: 2
+    }
+
+    .industry__brexit {
+        max-width: 65em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .industry__sub-titles {
+        font-size: 3rem;
+    }
+
+    .industry__blog-buttons {
+        max-width: 65em;
+        margin: 0 auto;
+    }
+
+    .industry__blog-btn {
+        font-size: 1.5rem;
+    }
+
+    .industry__references {
+        max-width: 65em;
+        margin: 0 auto;
+    }
+
+    .industry__reference-item {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (min-width: 50em) {
+    .industry__skills-section {
+        max-width: 65em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .industry__blog-circle {
+        max-width: 65em;
+        margin: 0 auto;
+    }
+
+    .industry__job-section {
+        max-width: 65em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .industry__img-caption {
+        font-size: 1.3rem;
+        color: var(--color-gold-darker);
+        font-style: italic;
+    }
+}
 
 /*--------------------------------------------
             Footer
