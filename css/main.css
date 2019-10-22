@@ -457,8 +457,8 @@ img {
 }
 
 @media screen and (min-width: 48em) {
-    .contact__large-container {
-        max-width: 1200px;
+    .contact__form-container {
+        max-width: 80rem;
         margin: 0 auto;
         display: -ms-grid;
         display: grid;
@@ -469,51 +469,9 @@ img {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        grid-column: 1 / span 2;
     }
 
-}
-
-/*--------------------------------------------
-            Social Media
---------------------------------------------*/
-
-.social__title {
-    font-size: 2rem;
-    padding-top: 3rem;
-    text-transform: uppercase;
-    color: var(--color-primary);
-    text-align: center;
-    line-height: 1.2;
-}
-
-.social__media-icons {
-    padding: 2.5rem 0 3rem 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-
-.social__icon {
-    display: inline-block;
-    color: var(--color-gold-primary);
-    padding: 2.5rem;
-    border-radius: 50%;
-    transition: all 200ms ease-in;
-}
-
-.social__icon:hover,
-.social__icon:focus {
-    background-color: var(--color-primary);
-    color: var(--color-grey-light);
-    transform: translateY(-.3rem);
-    box-shadow: 0 2rem 5rem rgba(0,0,0,.44);
-}
-
-.social__icon:active {
-    transform: translateY(-.1rem);
 }
 
 /*--------------------------------------------
@@ -930,6 +888,18 @@ img {
     font-size: 3.5rem;
     letter-spacing: .5rem;
     line-height: 1.2;
+    animation: animateBlogTitle 800ms ease-in;
+}
+
+@keyframes animateBlogTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .industry {
@@ -990,6 +960,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     font-style: italic;
 }
 
+.blog__credit {
+    color: var(--color-gold-darker);
+}
+
 .industry__reference {
     background-color: var(--color-grey-light-2);
     padding: 2rem;
@@ -1041,18 +1015,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     }
 
     .industry__intro h2 {
-        grid-column: 1 / span 2;
-        grid-row: 1;
         font-size: 3.3rem;
     }
 
     .industry p {
         font-size: 1.8rem;
-    }
-
-    .industry__intro p {
-        grid-column: 1 / span 2;
-        grid-row: 2
     }
 
     .industry__brexit {
@@ -1125,14 +1092,54 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 .master-footer__container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 20vh;
+    align-items: center; 
 }
 
 .master-footer__text {
-    font-size: 3rem;
+    font-size: 1.7rem;
+    padding: 1rem 0;
     color: var(--color-grey-light);
     text-transform: uppercase;
+}
+
+.social__title {
+    font-size: 2rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    color: var(--color-grey-light);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.social__media-icons {
+    padding: 2.5rem 0 3rem 0;
+    margin: 0 1.5rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.social__icon {
+    display: inline-block;
+    color: var(--color-grey-light);
+    padding: 1.2rem;
+    border-radius: 50%;
+    transition: all 200ms ease-in;
+}
+
+.social__icon:hover,
+.social__icon:focus {
+    background-color: var(--color-gold-primary);
+    color: var(--color-grey-light);
+    transform: translateY(-.3rem);
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.44);
+}
+
+.social__icon:active {
+    transform: translateY(-.1rem);
 }
 
 
