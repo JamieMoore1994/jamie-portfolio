@@ -1106,6 +1106,15 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 }
 
 /*--------------------------------------------
+        Portfolio Development Blog Page
+--------------------------------------------*/
+.portfolio__header {
+    background-image: url(../img/portfolio-blog-bg.svg);
+    background-size: cover;
+    height: 40vh;
+}
+
+/*--------------------------------------------
             Footer
 --------------------------------------------*/
 
