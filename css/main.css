@@ -1112,7 +1112,104 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     background-image: url(../img/portfolio-blog-bg.svg);
     background-size: cover;
     height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.portfolio__header-title {
+    color: var(--color-grey-light);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1.2;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    animation: animatePortfolioTitle 700ms ease;
+}
+
+@keyframes animatePortfolioTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate();
+    }
+}
+
+.portfolio {
+    padding: 2.2rem 1.5rem;
+}
+
+.portfolio__blog-intro {
+    margin: 1.5rem 0;
+}
+
+.portfolio__page-title {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    padding-bottom: .8rem;
+}
+
+.portfolio p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-grey-dark);
+    padding: .8rem 0;
+}
+
+.portfolio__sub-titles {
+    font-size: 2rem;
+    padding: 1.5rem 0 0 0;
+    text-transform: uppercase;
+    color: var(--color-gold-primary);
+}
+
+.portfolio__wireframes {
+    padding: 1.5rem 0;
+}
+
+.portfolio__code {
+    padding: 1rem 0 0 0;
+}
+
+.portfolio__code figcaption {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-grey-dark);
+    padding: .8rem 0;
+}
+
+.code-examples {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 39em) {
+    .portfolio__wireframes-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 45em) {
+    .portfolio {
+        max-width: 65em;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .portfolio p {
+        font-size: 1.8rem;
+    }
+}
+
 
 /*--------------------------------------------
             Footer

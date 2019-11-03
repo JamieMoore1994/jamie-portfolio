@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang = en-gb>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio blog | Jamie Moore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "description" content= "Find out the whole process behind building my portfolio website, from research to design and then to building the website from scratch.">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="https://kit.fontawesome.com/b65bf85635.js" crossorigin="anonymous" async></script>
+</head>
+<body>
+    <a href="#content" class="skip-link">Skip To Content</a>
+    <header class = "portfolio__header">
+        <h1 class = "portfolio__header-title">Portfolio Development Process</h1>
+    </header>
+    <main id = "content">
+        <section class = "portfolio">
+            <div class="portfolio__blog-intro">
+                <h2 class="portfolio__page-title">Research, design and build my own professional portfolio website. How did i do all this?</h2>
+                <p>Building a professional personal website that’s all about me, what I do and what I can offer to people is both new and exciting to me. My main priorities for this website was to make sure it looked great, performed great as well as being accessible and usable. This website is meant to help me find employment and showcase my services and portfolio, so trying to do a great job of this project was paramount to me.</p>
+            </div>
+            <div class="portfolio__research">
+                <h3 class="portfolio__sub-titles">Website Research:</h3>
+                <p>To begin with, I start with a clean empty canvas and my head a little of ideas on what I can do with my website. To kick start this project off I spent time doing countless number of hours of research looking at other professional web developer’s portfolio websites to gather how they structure and present themselves to you. </p>
+
+                <p>My favourite portfolio website I come across was Andy Clarke’s – who is a highly respected and experienced web designer. His website is unique, beautifully designed, yet simple and easy to use. It had a modern and easy to read typeface, an easy on the eye colour palette that had great colour contrast and an effective way in which he displayed and broke down each of his recent projects. I knew that if I could follow these principles whilst designing a website that looked a fraction as good as this site, it would be a successful project to me. Take a look at <a href = "https://stuffandnonsense.co.uk/" class = "blog__links" title = "Andy Clarke's website">Andy Clarke's </a>website yourself</p>
+
+                <p>A main factor of this website is to showcase my recent projects in a simple and easy to understand way. When looking at ways in which to display my recent project, I came across a Twitter thread from Alex Muench – who is a senior product designer – that gave his thoughts on how to display your portfolio website. Muench (2019) stated that you should not only just display your recent projects, but to write about your project in detail such as what you loved and learned about the project, to what you would do differently about the project if you were to do it again. Providing this context to users who may use my website will be a useful feature and allow people to understand how I think and critique my own work.</p>
+            </div>
+            <div class="portfolio__design">
+                <h3 class="portfolio__sub-titles">Website Design:</h3>
+                <p>I now need to put all my ideas in my head onto paper and some design ideas visually displayed. A low fidelity wireframe is a perfect design method to do this, as Haas (no date) states, you can gain a better understanding of what you’re building, and your designs are more calculated. Content hierarchy was a main focus when producing my designs as it is important to ensure that the most important content was at the top of the page for the users to see.</p>
+
+                <div class="portfolio__wireframes-container">
+                    <figure class = "portfolio__wireframes">
+                        <img src = "img/optimised-blog-photos/blogs-wireframe.JPG" alt = "Wireframe drawing of my first draft blogs page">
+                        <figcaption class="industry__img-caption">Wireframe drawing of my blogs page</figcaption>
+                    </figure>
+
+                    <figure class = "portfolio__wireframes">
+                        <img src = "img/optimised-blog-photos/mobile-blog-wireframe.JPG" alt = "Wireframe drawing for mobile version of my blogs page">
+                        <figcaption class="industry__img-caption">Wireframe drawing for mobile version for the blogs page</figcaption>
+                    </figure>
+
+                    <figure class = "portfolio__wireframes">
+                        <img src = "img/optimised-blog-photos/cv-wireframe.JPG" alt = "Wireframe drawing of my CV for the CV's page">
+                        <figcaption class="industry__img-caption">Wireframe drawing of my CV for the CV's page</figcaption>
+                    </figure>
+
+                    <figure class = "portfolio__wireframes">
+                        <img src = "img/optimised-blog-photos/industry-wireframe.JPG" alt = "Wireframe drawing of my industry blog report page">
+                        <figcaption class="industry__img-caption">Wireframe drawing of my industry blog report page</figcaption>
+                    </figure>
+                </div>
+
+                <p>Next step is typography, I wanted an easy to read sans-serif typeface for most of the website and ‘Poppins’ seemed the perfect choice for me with its smooth round edges to the letters.</p>
+
+                <figure class = "portfolio__wireframes">
+                    <img src = "img/optimised-blog-photos/header-bg-screenshot.png" alt = "The Scalabale Vector Graphic background image in Illustrator">
+                    <figcaption class="industry__img-caption">The Scalabale Vector Graphic background image in Illustratore</figcaption>
+                </figure>
+                <p>A theme throughout the site is the Scalable Vector Graphics (SVG) backgrounds I created – in which I felt gave a modern and dynamic feel to the website. SVG allow for many great possibilities on the web, with the main benefit being all modern browsers support it, has search engine optimisation benefits and SVG images scale any size to fit web pages – whilst keeping the quality of the image (Appnovation, no date). I only use SVG for background images in my portfolio but on future projects I will be sure to take full advantage of SVG images.</p>
+            </div>
+            <div class="portfolio__build">
+                <figure class = "portfolio__build-css">
+                    <img src = "img/optimised-blog-photos/css-variables.png" alt = "Custom CSS properties">
+                    <figcaption class="industry__img-caption">The custom CSS properties I set for my portfolio website</figcaption>
+                </figure>
+
+                <h3 class="portfolio__sub-titles">Website Build:</h3>
+                <p>Now for the exciting part, bringing this project to life. As I gain more experience in building websites, a large factor to help to help the build run smoothly is organisation. CSS files can be large and difficult to maintain and an easy way to stay organised is through the use of CSS custom properties. MDN Contributors (2019) define CSS custom properties as entities created by the person who write the CSS code that contain specific values to be reused throughout the document. I took advantage of this by defining all my colours needed in the root element so that changing or updating colours in the future will be as easy as changing the property’s value.</p>
+
+                <p>To layout my website, I utilise the power and magic of Flexbox and CSS Grid, these tools are amazing. Flexbox allows the items width and height within its container to best fill the available space (CSS Tricks, 2019). CSS grid is a layout system with rows and columns that allow you to design pages without the use of floats and positioning (W3 Schools, no date). Combining these two amazing tools together will pretty much allow you to create any design you can think of!</p>
+
+                <div class="portfolio__code-snippets">
+                    <h4 class="portfolio__sub-titles">The code used for my navigation</h4>
+                    
+                    <figure class = "portfolio__code">
+                        <code class = "code-examples">
+                            display: flex;
+                            justify-content: space-around;
+                            flex-wrap: wrap;
+                        </code>
+                        <figcaption>Three lines of code and I had a responsive navigation. Once you give something a value of display flex it will align everything within it's container on the horizontal axis together side by side.</figcaption>
+                    </figure>
+                </div>
+                <div class="portfolio__code-snippets">
+                    <h4 class="portfolio__sub-titles">Here is the power of CSS grid</h4>
+
+                    <figure class="portfolio__code">
+                        <code class = "code-examples">
+                            display: grid;
+                            /* Makes card layout responsive, no need for media queries */
+                            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                         </code>
+                        <figcaption>
+                            <p>Two lines of code and this allowed for the blog cards on the blog page to be completely responsive without the use of media queries. The auto-fit creates as many tracks the content needs so that they take up any avaiblable space. I then as for each column to have a minumum width od 25rem (250px) and a maximum width of one fraction of the available space. This is all wrapped in a repeat function allowing each card to align side by side if there is any available space.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class = "portfolio__build-grid">
+                        <img src = "img/optimised-blog-photos/blog-grid.png" alt = "The grid layout for the blogs page">
+                        <figcaption class="industry__img-caption">The grid layout that allows the cards to fit within the grif tracks</figcaption>
+                    </figure>
+                </div>
+
+                <div class="industry__blog-buttons">
+                    <a href="index.html" class="btn industry__blog-btn" title = "Back to home page">Homepage</a>
+                    <a href="blog.html" class="btn industry__blog-btn" title = "Blogs page">Back to blogs page</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="industry__reference">
+            <ul class="industry__references">
+                    <li class="industry__references-item">
+                        Appnovation. (no date) The Benefits of Scalable Vector Graphics (SVG). [Online] [Accessed on the 1st November 2019] <a href = "www.appnovation.com/blog/benefits-scalable-vector-graphics-svg">https://www.appnovation.com/blog/benefits-scalable-vector-graphics-svg</a>
+                    </li>
+                    <li class="industry__references-item">
+                        CSS Tricks. (2019) A Complete Guide to Flexbox. 27th October. [Online] [Accessed on the 3rd November 2019] <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background</a>
+                    </li>
+                    <li class="industry__references-item">
+                        Hass, N. (no date) What is a Wireframe? 7 Reasons Why Wireframing is Important in Web Design. Orbit Media Studios. [Online] [Accessed on the 1st November 2019] <a href = "https://www.orbitmedia.com/blog/7-reasons-to-wireframe/">https://www.orbitmedia.com/blog/7-reasons-to-wireframe/</a>
+                    </li>
+                    <li class="industry__references-item">
+                        MDN contributors. (2019) Using CSS Custom Properties (Variables). 30th October. Mozilla. [Online] [Accessed on the 3rd November 2019] <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties</a>
+                    </li>
+                    <li class="industry__references-item">
+                        Muench, A. (2018) For Designers: From looking through lots of portfolios during the last weeks from young designers. 26th November. Twitter. [Online] [Accessed on the 1st November 2019] <a href = "https://twitter.com/alexmuench/status/1067042440207626240">https://twitter.com/alexmuench/status/1067042440207626240</a>
+                    </li>
+                    <li class="industry__references-item">
+                        W3 Schools. (no date) CSS Grid Layout Module. [Online] [Accessed on the 3rd November 2019] <a href = "https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a>
+                    </li>
+                </ul>
+        </aside>
+
+        <footer class="master-footer">
+        <div class = "master-footer__container">
+            <p class="master-footer__text">&copy; Jamie Moore - 2019</p>
+        </div>
+
+        <div class="social__media">
+            <h3 class="social__title">Get in Touch on Social Media</h3>
+            <ul class="social__media-icons">
+                <li class="social__icons"><a href = "#" class = "social__icon" title = "Facebook"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+                <li class="social__icons"><a href = "#" class = "social__icon" title = "Twitter"><i class="fab fa-twitter fa-3x"></i></a></li>
+                <li class="social__icons"><a href = "#" class = "social__icon" title = "Linked In"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
+                </ul>
+            </div>
+            <a href = "#top" class = "btn back-top" title = "Top of page">Back To Top</a>
+    </footer>
+</body>
+</html>
+    
