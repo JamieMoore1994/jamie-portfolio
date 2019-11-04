@@ -266,7 +266,7 @@ img {
 }
 
 .about__bold-text {
-    color: var(--color-primary);
+    color: var(--color-gold-darker);
     font-weight: 900;
 }
 
@@ -1176,6 +1176,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     padding: 1rem 0 0 0;
 }
 
+.portfolio__code-background {
+    background-color: var(--color-primary);
+    padding: 1rem;
+}
+
 .portfolio__code figcaption {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -1184,8 +1189,35 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 }
 
 .code-examples {
+    color: var(--color-grey-light);
+    font-size: 1.8rem;
+}
+
+.code-examples.inline {
     color: var(--color-primary);
     font-size: 1.8rem;
+}
+
+.portfolio__resources {
+    padding: 1.2rem 2rem;
+}
+
+.portfolio__resources li {
+    padding: .5rem;
+}
+
+.portfolio__resources a {
+    text-decoration: underline;
+    color: var(--color-grey-dark);
+    font-size: 1.5rem;
+}
+
+.portfolio__resources a:hover,
+.portfolio__resources a:focus {
+    background-color: var(--color-button-background);
+    color: var(--color-grey-light);
+    transition: all 200ms ease-in;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 39em) {

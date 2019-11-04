@@ -18,15 +18,15 @@
         <section class = "portfolio">
             <div class="portfolio__blog-intro">
                 <h2 class="portfolio__page-title">Research, design and build my own professional portfolio website. How did i do all this?</h2>
-                <p>Building a professional personal website that’s all about me, what I do and what I can offer to people is both new and exciting to me. My main priorities for this website was to make sure it looked great, performed great as well as being accessible and usable. This website is meant to help me find employment and showcase my services and portfolio, so trying to do a great job of this project was paramount to me.</p>
+                <p>Building a professional portfolio website that showcases my skills, recent projects, and my recent blog posts – my first time blogging too - is certainly a first for me. This website is to showcase to potential employers so I was nervous and excited in making sure I did a good job of this.</p>
             </div>
             <div class="portfolio__research">
                 <h3 class="portfolio__sub-titles">Website Research:</h3>
-                <p>To begin with, I start with a clean empty canvas and my head a little of ideas on what I can do with my website. To kick start this project off I spent time doing countless number of hours of research looking at other professional web developer’s portfolio websites to gather how they structure and present themselves to you. </p>
+                <p>I start with a clean empty canvas and my head a little short of ideas on what I can do with my website. I spent countless hours looking at other professional web developer’s portfolio websites to gather how they structure and present themselves to you.  </p>
 
                 <p>My favourite portfolio website I come across was Andy Clarke’s – who is a highly respected and experienced web designer. His website is unique, beautifully designed, yet simple and easy to use. It had a modern and easy to read typeface, an easy on the eye colour palette that had great colour contrast and an effective way in which he displayed and broke down each of his recent projects. I knew that if I could follow these principles whilst designing a website that looked a fraction as good as this site, it would be a successful project to me. Take a look at <a href = "https://stuffandnonsense.co.uk/" class = "blog__links" title = "Andy Clarke's website">Andy Clarke's </a>website yourself</p>
 
-                <p>A main factor of this website is to showcase my recent projects in a simple and easy to understand way. When looking at ways in which to display my recent project, I came across a Twitter thread from Alex Muench – who is a senior product designer – that gave his thoughts on how to display your portfolio website. Muench (2019) stated that you should not only just display your recent projects, but to write about your project in detail such as what you loved and learned about the project, to what you would do differently about the project if you were to do it again. Providing this context to users who may use my website will be a useful feature and allow people to understand how I think and critique my own work.</p>
+                <p>When looking at ways in which to display my recent projects, I came across a <a href = "https://twitter.com/alexmuench/status/1067042440207626240" class = "blog__links" title = "Alex Muench Twitter thread" >Twitter thread from Alex Muench</a>   – who is a senior product designer – that gave his thoughts on how to display your portfolio website. Muench (2019) stated that you should not only just display your recent projects, but to write about your project in detail such as what you loved and learned about the project, to what you would do differently about the project if you were to do it again. Providing this context to users who may use my website will be a useful feature and allow people to understand how I think and critique my own work.</p>
             </div>
             <div class="portfolio__design">
                 <h3 class="portfolio__sub-titles">Website Design:</h3>
@@ -58,51 +58,68 @@
 
                 <figure class = "portfolio__wireframes">
                     <img src = "img/optimised-blog-photos/header-bg-screenshot.png" alt = "The Scalabale Vector Graphic background image in Illustrator">
-                    <figcaption class="industry__img-caption">The Scalabale Vector Graphic background image in Illustratore</figcaption>
+                    <figcaption class="industry__img-caption">The Scalabale Vector Graphic background image in Illustrator</figcaption>
                 </figure>
+                
                 <p>A theme throughout the site is the Scalable Vector Graphics (SVG) backgrounds I created – in which I felt gave a modern and dynamic feel to the website. SVG allow for many great possibilities on the web, with the main benefit being all modern browsers support it, has search engine optimisation benefits and SVG images scale any size to fit web pages – whilst keeping the quality of the image (Appnovation, no date). I only use SVG for background images in my portfolio but on future projects I will be sure to take full advantage of SVG images.</p>
             </div>
             <div class="portfolio__build">
+
+                <h3 class="portfolio__sub-titles">Website Build:</h3>
+                <p>Now for the exciting part, bringing this project to life. As I gain more experience in building websites, a large factor to help to help the build run smoothly is organisation. CSS files can be large and difficult to maintain and an easy way to stay organised is through the use of CSS custom properties. MDN Contributors (2019) define CSS custom properties as entities created by the person who write the CSS code that contain specific values to be reused throughout the document. I took advantage of this by defining all my colours needed in the root element so that changing or updating colours in the future will be as easy as changing the property’s value.</p>
+
                 <figure class = "portfolio__build-css">
                     <img src = "img/optimised-blog-photos/css-variables.png" alt = "Custom CSS properties">
                     <figcaption class="industry__img-caption">The custom CSS properties I set for my portfolio website</figcaption>
                 </figure>
 
-                <h3 class="portfolio__sub-titles">Website Build:</h3>
-                <p>Now for the exciting part, bringing this project to life. As I gain more experience in building websites, a large factor to help to help the build run smoothly is organisation. CSS files can be large and difficult to maintain and an easy way to stay organised is through the use of CSS custom properties. MDN Contributors (2019) define CSS custom properties as entities created by the person who write the CSS code that contain specific values to be reused throughout the document. I took advantage of this by defining all my colours needed in the root element so that changing or updating colours in the future will be as easy as changing the property’s value.</p>
+                <p>To layout my website, I utilise the power and magic of Flexbox and CSS Grid. Flexbox allows the items width and height within its container to best fill the available space (CSS Tricks, 2019). CSS grid is a layout system with rows and columns that allow you to design pages without the use of floats and positioning (W3 Schools, no date). These tools are amazing and combining these two amazing tools together will pretty much allow you to create any design you can think of!</p>
 
-                <p>To layout my website, I utilise the power and magic of Flexbox and CSS Grid, these tools are amazing. Flexbox allows the items width and height within its container to best fill the available space (CSS Tricks, 2019). CSS grid is a layout system with rows and columns that allow you to design pages without the use of floats and positioning (W3 Schools, no date). Combining these two amazing tools together will pretty much allow you to create any design you can think of!</p>
-
+                
                 <div class="portfolio__code-snippets">
                     <h4 class="portfolio__sub-titles">The code used for my navigation</h4>
                     
                     <figure class = "portfolio__code">
-                        <code class = "code-examples">
-                            display: flex;
-                            justify-content: space-around;
-                            flex-wrap: wrap;
-                        </code>
-                        <figcaption>Three lines of code and I had a responsive navigation. Once you give something a value of display flex it will align everything within it's container on the horizontal axis together side by side.</figcaption>
+                        <div class="portfolio__code-background">
+                            <code class = "code-examples">
+                                display: flex;
+                                justify-content: space-around;
+                                flex-wrap: wrap;
+                            </code>
+                        </div>
+                        <figcaption>Three lines of code and I had a responsive navigation. Once you give something a value of display flex it will align everything within it's container on the horizontal axis together side by side. Giving the value of <code class = "code-examples inline">space-around</code> to the attribute <code class = "code-examples inline">justify-content</code> will align the navigation items evenly side by side with equal space around them.</figcaption>
                     </figure>
                 </div>
                 <div class="portfolio__code-snippets">
                     <h4 class="portfolio__sub-titles">Here is the power of CSS grid</h4>
 
                     <figure class="portfolio__code">
-                        <code class = "code-examples">
-                            display: grid;
-                            /* Makes card layout responsive, no need for media queries */
-                            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-                         </code>
+                        <div class="portfolio__code-background">
+                            <code class = "code-examples">
+                                display: grid;
+                                /* Makes card layout responsive, no need for media queries */
+                                grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                            </code>
+                        </div>
                         <figcaption>
-                            <p>Two lines of code and this allowed for the blog cards on the blog page to be completely responsive without the use of media queries. The auto-fit creates as many tracks the content needs so that they take up any avaiblable space. I then as for each column to have a minumum width od 25rem (250px) and a maximum width of one fraction of the available space. This is all wrapped in a repeat function allowing each card to align side by side if there is any available space.</p>
+                            <p>Two lines of code and this allowed for the blog cards on the blog page to be completely responsive without the use of media queries. The <code class = "code-examples inline">auto-fit</code> creates as many tracks the content needs so that they take up any avaiblable space. I then as for each column to have a minumum width of <code class = "code-examples inline">25rem (250px)</code> and a maximum width of <code class = "code-examples inline">1fr (one fraction of the available space)</code> of the available space. This is all wrapped in a repeat function allowing each card to align side by side if there is any available space.</p>
                         </figcaption>
                     </figure>
 
                     <figure class = "portfolio__build-grid">
                         <img src = "img/optimised-blog-photos/blog-grid.png" alt = "The grid layout for the blogs page">
-                        <figcaption class="industry__img-caption">The grid layout that allows the cards to fit within the grif tracks</figcaption>
+                        <figcaption class="industry__img-caption">The grid layout that allows the cards to fit within the grid tracks</figcaption>
                     </figure>
+
+                    <h4 class="portfolio__sub-titles">Want to learn more Flexbox and Grid? </h4>
+
+                    <ul class="portfolio__resources">
+                        <li><a href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag" title = "Jen Simmons Youtube channel">Jen Simmons Layout Land</a></li>
+                        <li><a href="https://gridbyexample.com/" title = "Rachel Andrew Grid tutorials">Rachel Andrew's Grid by Example</a></li>
+                        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" title = "CSS Tricks Flexbox guide">Everything you need to know about Flexbox</a></li>
+                        <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" title = "CSS Tricks Grid guide">Everything you need to know about CSS Grid</a></li>
+                    </ul>
+
                 </div>
 
                 <div class="industry__blog-buttons">
