@@ -1320,6 +1320,22 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     padding: 1.2rem 0 .3rem 0;
 }
 
+.projects__main-title {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    line-height: 1.3;
+    padding: 3rem 1rem 4rem 1rem;
+    text-align: center;
+}
+
+.projects__main-title {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    line-height: 1.3;
+    padding: 3rem 1rem 4rem 1rem;
+    text-align: center;
+}
+
 .live__music p {
     color: var(--color-grey-dark);
     font-size: 1.5rem;
@@ -1349,6 +1365,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 
     .projects__title {
         padding: 0 0 1rem 0;
+    }
+
+    .projects__main-title {
+        font-size: 3rem;
     }
 
     .projects__description {
