@@ -951,6 +951,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 
 .industry__sub-titles {
     font-size: 2rem;
+    line-height: 1.2;
     padding: 1.5rem 0 0 0;
     text-transform: uppercase;
     color: var(--color-gold-primary);
@@ -962,7 +963,6 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 
 .skills__report {
     float: left;
-    border-radius: 50%;
     shape-outside: circle(50%);
     margin-top: 1rem;
     shape-margin: 1vw;
@@ -1311,7 +1311,6 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 .live__music {
     margin: 3rem 0;
     padding: 2rem 1rem;
-    display: flex;
 }
 
 .projects__title {
@@ -1339,11 +1338,33 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     padding: 1rem 4rem;
 }
 
-/* Project Example Two */
+@media screen and (min-width: 43em) {
+    .projects {
+        max-width: 98em;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
 
-.live__music.two {
-    background-color: var(--color-grey-light-2);
+    .projects__title {
+        padding: 0 0 1rem 0;
+    }
+
+    .projects__description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects__description .btn {
+        margin-top: 2rem;
+    }
+
+    .projects p {
+        font-size: 1.8rem;
+    }
 }
+
 
 
 /*--------------------------------------------
