@@ -65,7 +65,7 @@ img {
                 Accessibility
 --------------------------------------------*/
 .skip-link {
-    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
     position: absolute;
     top: 0;
     left: 0;
@@ -264,7 +264,6 @@ img {
 
 .about__img-jamie {
     border-radius: 50%;
-    shape-outside: circle(50%);
 }
 
 .about__description {
@@ -497,7 +496,7 @@ img {
 .cv__header {
     background-image: url(../img/cv-bg.svg);
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
 }
 
 .cv__container {
@@ -751,7 +750,7 @@ img {
 }
 
 .blogs__intro-text {
-    color: var(--color-grey-light);
+    color: var(--color-grey-light-2);
     font-size: 1.8rem;
     padding: 1.3rem 1rem 3rem 1rem;
 }
@@ -942,9 +941,7 @@ img {
 
 .industry__brexit-img {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    shape-outside: url(../img/james-claffey-beUtKWoCdaM-unsplash.JPG);
-    shape-margin: 2vw;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 .industry p {
@@ -1422,6 +1419,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     letter-spacing: .2rem;
     margin-top: 2rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .my-projects {
@@ -1745,9 +1743,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 }
 
 .back-top {
-    position: absolute;
+    position: relative;
     bottom: 5%;
-    right: 2%;
+    left: 70%;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 42em) {
