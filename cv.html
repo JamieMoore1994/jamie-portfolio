@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name = "description" content = "My CV page displaying my professional profile, my employable skills and my contact details for employers.">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <script src="https://kit.fontawesome.com/b65bf85635.js" crossorigin="anonymous" async></script>
 </head>
 <body>
     <a href="#content" class="skip-link">Skip To Content</a>
@@ -93,18 +92,55 @@
             </div>
         </section>
     </main>
-    <footer class="master-footer">
-        <div class = "master-footer__container">
-            <p class="master-footer__text">&copy; Jamie Moore - 2019</p>
-        </div>
+    <footer class="master__footer">
+        <div class="master__footer-container">
 
         <div class="social__media">
             <h3 class="social__title">Get in Touch on Social Media</h3>
             <ul class="social__media-icons">
-                <li class="social__icons"><a href = "#" class = "social__icon" title = "Facebook"><i class="fab fa-facebook-f fa-3x"></i></a></li>
-                <li class="social__icons"><a href = "#" class = "social__icon" title = "Twitter"><i class="fab fa-twitter fa-3x"></i></a></li>
-                <li class="social__icons"><a href = "#" class = "social__icon" title = "Linked In"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
+                <li>
+                    <a href = "#" class = "social__icon" title = "Facebook">
+                        <svg class = "social__media-icon">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class = "social__icon" title = "Facebook">
+                        <svg class = "social__media-icon">
+                            <use xlink:href="img/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class = "social__icon" title = "Twitter">
+                        <svg class = "social__media-icon">
+                            <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class = "social__icon" title = "Linked In">
+                        <svg class = "social__media-icon">
+                            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
                 </ul>
+            </div>
+
+                <div class="footer__useful">
+                    <h4 class="footer__links-title">Some Useful Links</h4>
+                        <ul class="footer__links">
+                            <li class="footer__link"><a href="index.html">Home</a></li>
+                            <li class="footer__link"><a href="blog.html">Blogs</a></li>
+                            <li class="footer__link"><a href="portfolio.html">Portolio</a></li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="footer__disclaimer">
+                <p class="master__footer-text">Copyright&copy; Jamie Moore - 2019</p>
             </div>
             <a href = "#top" class = "btn back-top" title = "Top of page">Back To Top</a>
     </footer>

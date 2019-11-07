@@ -286,7 +286,7 @@ img {
 
 @media screen and (min-width: 44em) {
     .about__container {
-        max-width: 1200px;
+        max-width: 120rem;
         margin: 0 auto;
         display: -ms-grid;
         display: grid;
@@ -369,7 +369,7 @@ img {
 
 @media screen and (min-width: 47em) {
     .services__items {
-        max-width: 1200px;
+        max-width: 120rem;
         margin: 0 auto;
 
         display: -ms-grid;
@@ -756,16 +756,15 @@ img {
     transform: translateX(-50%);
     height: 0;
     width: 0;
+    padding: 0;
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
     border-top: 2rem solid var(--color-gold-primary);
- 
 }
-
 
 .blogs__cards {
     list-style: none;
-
+    
     display: -ms-grid;
     display: grid;
     /* Makes card layout responsive, no need for media queries */
@@ -1407,6 +1406,9 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     font-size: 3rem;
     color: var(--color-grey-light);
     line-height: 1.3;
+    letter-spacing: .2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
 }
 
 .my-projects {
@@ -1482,10 +1484,19 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
         margin: 0 auto;
     }
 
+    .projects__page-title {
+        font-size: 3.8rem;
+    }
+
+    .my-projects p {
+        font-size: 1.8rem;
+    }
+
     .project__title {
         font-size: 3.5rem;
         margin: 2rem 0;
     }
+
 
     .project__images {
         display: grid;
@@ -1505,6 +1516,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 
     .project__description {
         margin-top: 2.5rem;
+    }
+
+    .my-projects figcaption {
+        font-size: 1.5rem;
     }
 }
 
@@ -1563,6 +1578,14 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     margin: 1.3rem 0; 
 }
 
+.project__design-ideas img {
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.5);
+}
+
+.project__design-ideas figcaption {
+    margin-top: 1.2rem;
+}
+
 .project__success p {
     padding-bottom: 1rem;
 }
@@ -1604,27 +1627,56 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     padding-bottom: 1rem;
 }
 
+.project__logo.plan img {
+    border-radius: 10rem;
+    margin: 1rem 1rem 0 0;
+}
+
+@media screen and (min-width: 39em) {
+    .project__logo.plan img {
+        margin: 2rem 2rem 0 0;
+    }
+}
+
 
 /*--------------------------------------------
             Footer
 --------------------------------------------*/
 
-.master-footer {
+.master__footer {
     background-image: var(--color-primary-gradient);
     background-size: cover;
     position: relative;
-}
-.master-footer__container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    padding: 2rem;
 }
 
-.master-footer__text {
-    font-size: 1.7rem;
-    padding: 1rem 0;
+.footer__links-title {
     color: var(--color-grey-light);
-    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.footer__links {
+    list-style: none;
+}
+
+.footer__link {
+    text-decoration: 1rem solid var(--color-grey-light);
+    padding: .3rem 0;
+    font-size: 1.5rem;
+}
+
+.footer__links a {
+    color: var(--color-grey-light);
+    transition: all 200ms ease-in;
+}
+
+.footer__links a:hover,
+.footer__links a:focus {
+    background-color: var(--color-gold-darker);
+    color: var(--color-grey-light);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10rem;
 }
 
 .social__media {
@@ -1633,49 +1685,92 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 
 .social__title {
     font-size: 2rem;
-    padding-top: 3rem;
-    text-transform: uppercase;
+    padding-top: 1rem;
     color: var(--color-grey-light);
-    text-align: center;
     line-height: 1.2;
 }
 
 .social__media-icons {
-    padding: 2.5rem 0 3rem 0;
-    margin: 0 1.5rem;
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
+.social__media-icon {
+    height: 3rem;
+    width: 3rem;
+    fill: var(--color-grey-light);
+    margin: 2rem 2.5rem;
+}
+
+.social__media-icon:nth-of-type(1) {
+    margin-left: 0;
+}
+
 .social__icon {
-    display: inline-block;
-    color: var(--color-grey-light);
-    padding: 2rem;
-    margin: 0 2rem;
-    border-radius: 50%;
-    transition: all 200ms ease-in;
+    display: block;
+    transition: transform 200ms ease-in;
 }
 
 .social__icon:hover,
 .social__icon:focus {
-    background-color: var(--color-gold-primary);
-    color: var(--color-grey-light);
-    transform: translateY(-.3rem);
-    box-shadow: 0 2rem 5rem rgba(0,0,0,.44);
+    transform: translateY(-.4rem);
 }
 
-.social__icon:active {
-    transform: translateY(-.1rem);
+.footer__disclaimer {
+    margin-top: 2rem;
+}
+
+.master__footer-text {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: var(--color-grey-light);
 }
 
 .back-top {
     position: absolute;
     bottom: 5%;
     right: 2%;
+}
+
+@media screen and (min-width: 42em) {
+    .master__footer-container {
+        max-width: 75em;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .social__title,
+    .footer__links-title {
+        font-size: 2.2rem;
+    }
+    
+    .social__media-icon {
+        height: 4rem;
+        width: 4rem;
+        margin: 2rem 2.5rem;
+    }
+
+
+    .footer__link {
+        padding: .3rem 0;
+        font-size: 1.8rem;
+    }
+
+    .footer__disclaimer {
+        max-width: 75em;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.3rem;
+    }
 }
 
 
