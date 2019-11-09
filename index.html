@@ -16,7 +16,7 @@
     <header class="master__header" id = "top">
             <nav class="master__navigation">
                 <ul class="master__nav">
-                    <li><a href="index.html" title = "Homepage" class = "master__nav-links">Home</a></li>
+                    <li><a href="index.html" title = "Homepage" class = "master__nav-links active">Home</a></li>
                     <li><a href="blog.html" title = "Blog" class = "master__nav-links">Blog</a></li>
                     <li><a href="portfolio.html" title = "Portfolio" class = "master__nav-links">Portfolio</a></li>
                 </ul>
@@ -47,27 +47,29 @@
                 <a href="cv.html" class="btn" title = "See my CV">View My CV</a>
             </div>
     </article>
+
+    <!--Services grid section-->
     <section class="services">
         <h3 class="services__title">What i Do</h3>
         <div class = "services__content">
             <ul class = "services__items">
                 <li class="services__item">
-                    <i class="fab fa-html5 fa-7x services__icon"></i>
+                    <i class="fab fa-html5 fa-5x services__icon"></i>
                     <h4 class="services__item-title">HTML5</h4>
-                    <p class="services__description">The beginning of every website I develop begins with marking up the site in clean, semantic and readable html. Utilising the semantics of HTML5 enables you not only to give meaning and structure to a webpage, but you are enhancing its search engine optimisation as-well as ensuring the website is usable and accessible to all users. The importance of semantic HTML is paramount in every website I build.</p>
+                    <p class="services__description">The beginning of every website I develop begins with marking up the site in clean and semantic HTML. Utilising the semantics of HTML5 enables you not only to give meaning and structure to a webpage, but you are enhancing its search engine optimisation as-well as ensuring the website is usable and accessible to all users. The importance of semantic HTML is paramount in every website I build.</p>
                 </li>
                 <li class="services__item">
-                    <i class="fab fa-css3-alt fa-7x services__icon"></i>
+                    <i class="fab fa-css3-alt fa-5x services__icon"></i>
                     <h4 class="services__item-title">CSS3</h4>
                     <p class="services__description">The next phase after marking up a website is to make all that boring and bold text on the website look beautiful and easy to look at. I begin each project with a mobile first approach and that means I style the website to look good on mobile devices across many screen sizes then use media queries to adapt to make the site look good on various screen sizes and browsers.</p>
                 </li>
                 <li class="services__item">
-                    <i class="fab fa-js-square fa-7x services__icon"></i>
+                    <i class="fab fa-js-square fa-5x services__icon"></i>
                     <h4 class="services__item-title">JavaScript</h4>
                     <p class="services__description">I utilise JavaScript to add behaviour and interactivity to the website to enable users to interact with any website I build. You can do pretty much anything with JavaScript to a website and although my knowledge of it is good, but not great, I am learning every day to ensure my ability to utilise JavaScript to its full potential in order to produce the best websites possible.</p>
                 </li>
                 <li class="services__item">
-                    <i class="fas fa-user fa-7x services__icon"></i>
+                    <i class="fas fa-user fa-5x services__icon"></i>
                     <h4 class="services__item-title">User Experience Design</h4>
                     <p class="services__description">A strong passion of mine is to ensure the user experience for users on the websites I’m involved with building, is the most simple and easiest of tasks to achieve their goal. The process begins with efficient user research and constant testing the website with the user during the development process.</p>
                 </li>
@@ -76,12 +78,15 @@
     </section>
 
     <section class="contact">
+
         <div class="contact__heading">
             <h2 class="contact__title">Want to get in touch?</h2>
             <i class="fas fa-envelope-square fa-3x contact__email-icon"></i>
         </div>
+
         <div class = "contact__form-container">
         <form action="https://formspree.io/xeqqqyvp" method="POST" class = "contact__form">
+
             <div class="contact__label-container">
             <label for = "full-name" class = "contact__label">Name</label>
             <input type= "text" id = "full-name" class = "contact__input" placeholder= "Your Full Name" required>
@@ -113,6 +118,8 @@
         <div class="social__media">
             <h3 class="social__title">Get in Touch on Social Media</h3>
             <ul class="social__media-icons">
+
+                <!--Ico mood svg icons for social media, learn't from Chris Coyier book practival svg-->
                 <li>
                     <a href = "https://www.facebook.com/jamie.moore.5245" class = "social__icon" title = "Facebook">
                         <svg class = "social__media-icon">
@@ -150,6 +157,7 @@
                             <li class="footer__link"><a href="index.html" title = "Homepage">Home</a></li>
                             <li class="footer__link"><a href="blog.html" title = "Blogs page">Blogs</a></li>
                             <li class="footer__link"><a href="portfolio.html" title = "Portfolio page">Portolio</a></li>
+                            <li class="footer__link"><a href="cv.html" title = "My CV">CV</a></li>
                         </ul>
                 </div>
             </div>

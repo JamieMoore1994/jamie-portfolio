@@ -145,7 +145,7 @@ img {
 .master__header {
     background-image: url(../img/main-bg.svg);
     background-size: cover;
-    height: 85vh;
+    height: 75vh;
 }
 
 .master__nav {
@@ -189,6 +189,18 @@ img {
 .master__nav-links:focus::after {
     transform-origin: bottom left;
     transform: scale(1);
+}
+
+.master__nav-links.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .2rem;
+    border-radius: .2rem;
+    width: 100%;
+    background-color: var(--color-grey-light);
+    transform: unset;
 }
 
 .master__title {
@@ -330,6 +342,7 @@ img {
     color: var(--color-grey-light);
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 3rem;
     padding: 3rem 0;
     font-weight: 700;
 }
@@ -651,17 +664,17 @@ img {
     list-style: none;
 }
 
+.profile__details p {
+    font-size: 1.4rem;
+    color: var(--color-grey-dark);
+}
+
 .profile__contact-header {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--color-primary);
     padding: .5rem 0 .3rem 0;
-}
-
-.profile__contact-header + li {
-    font-size: 1.4rem;
-    color: var(--color-grey-dark);
 }
 
 .profile__email {
@@ -747,12 +760,14 @@ img {
     text-transform: uppercase;
     padding: 2rem 0 0 1rem; 
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .blogs__intro-text {
     color: var(--color-grey-light-2);
     font-size: 1.8rem;
-    padding: 1.3rem 1rem 3rem 1rem;
+    padding: 1.3rem 1rem 3rem 3rem;
+    text-align: left;
 }
 
 @media screen and (min-width: 41em) {
@@ -900,8 +915,6 @@ img {
     transform: skew(0deg, -7deg);
     margin-top: -15rem;
     margin-bottom: 10rem;
-    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%); */
 }
 
 .industry__container {
@@ -1387,10 +1400,10 @@ img {
 /*--------------------------------------------
             Live Music Page
 --------------------------------------------*/
-.projects__bg {
-    background-image: url(../img/projects-bg.svg);
+.projects__bg.projects__examples {
+    background-image: url(../img/portfolio-blog-bg.svg);
     background-size: cover;
-    height: 80vh;
+    height: 40vh;
 }
 
 @media screen and (min-width: 20em) {
