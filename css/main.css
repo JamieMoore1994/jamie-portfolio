@@ -2,8 +2,6 @@
             Typography
 --------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lobster+Two|Poppins&display=swap');
-
 /* For industry and portfolio blog
 font-family: 'Alfa Slab One', cursive;
 font-family: 'Lobster Two', cursive;
@@ -148,6 +146,12 @@ img {
     height: 75vh;
 }
 
+@media screen and (min-width: 90em) {
+    .master__header {
+        height: 61vh;
+    }
+}
+
 .master__nav {
     list-style: none;
     display: flex;
@@ -213,12 +217,17 @@ img {
 
 .master__heading {
     font-size: 4rem;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 900;
     color: var(--color-grey-light);
     text-transform: uppercase;
-    padding: 4rem 0 1rem 0; 
+    padding: 4rem 1rem 1rem 1rem; 
     letter-spacing: 2px;
+}
+
+.master__title {
+    text-align: center;
+    padding: 1rem;
 }
 
 .master__job {
@@ -309,16 +318,19 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: min-content min-content;
-        justify-items: center;
-        align-content: center;
+
     }
 
     .about__me {
         padding: 2rem 0;
     }
+
+    .about__description:nth-of-type(1) {
+        align-self: center;
+    }
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 60em) {
     .about__container {
         padding: 4rem 0 0 0;
         grid-template-columns: repeat(4, 1fr);
@@ -347,6 +359,12 @@ img {
     font-weight: 700;
 }
 
+@media screen and (min-width: 120em) {
+    .services__title {
+        margin-top: 6rem;
+    }
+}
+
 .services__content {
     padding: 2rem;
 }
@@ -360,17 +378,18 @@ img {
     
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-column-gap: 1vw;
+    grid-column-gap: 2vw;
 
     justify-items: start;
+    align-content: start;
 }
 
 .services__item-title {
     font-size: 2rem;
-    padding-bottom: 1rem;
     line-height: 1.1;
     color: var(--color-grey-light);
     font-weight: 700;
+    justify-self: start;
 }
 
 .services__icon {
@@ -382,7 +401,7 @@ img {
     color: var(--color-grey-light);
     font-weight: 600;
     font-size: 1.5rem;
-    padding-top: .5rem;
+    padding-top: 1rem;
 }
 
 @media screen and (min-width: 47em) {
@@ -392,8 +411,11 @@ img {
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: min-content min-content;
         grid-gap: 1vw;
+    }
+
+    .services__item {
+        grid-column-gap: 1vw;
     }
 
     .services__title {
@@ -509,7 +531,13 @@ img {
 .cv__header {
     background-image: url(../img/cv-bg.svg);
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
+}
+
+@media screen and (min-width: 30em) {
+    .cv__header {
+        height: 50vh;
+    }
 }
 
 .cv__container {
@@ -522,6 +550,7 @@ img {
 
 .cv__title {
     text-transform: uppercase;
+    text-align: center;
     font-size: 4rem;
     letter-spacing: 2px;
     font-weight: 700;
@@ -734,7 +763,7 @@ img {
 .blog {
     background-image: url(../img/main-bg.svg);
     background-size: cover;
-    height: 68vh;
+    height: 80vh;
 }
 
 @media screen and (min-width: 32em) {
@@ -885,24 +914,6 @@ img {
     font-style: italic;
 }
 
-.blogs__btn {
-    background-color: var(--color-blog-buttons);
-    color: var(--color-primary);
-    grid-column: 1 / span 2;
-    width: 100%;
-    text-align: center;
-    border-radius: 0;
-    padding: 2rem 0;
-    font-size: 1.5rem;
-
-    align-self: flex-end;
-}
-
-.blogs__btn:hover,
-.blogs__btn:focus {
-    background-color: var(--color-button-hover);
-}
-
 /*--------------------------------------------
             Industry Blog Page
 --------------------------------------------*/
@@ -967,7 +978,7 @@ img {
 .industry__sub-titles {
     font-size: 2rem;
     line-height: 1.2;
-    padding: 1.5rem 0 0 0;
+    padding: 1.5rem 0 .5rem 0;
     color: var(--color-gold-primary);
 }
 
@@ -1075,7 +1086,6 @@ img {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-
     }
     
     .industry__sub-titles {
@@ -1272,6 +1282,10 @@ img {
         font-size: 3.3rem;
     }
 
+    .portfolio__header-title {
+        font-size: 3.3rem;
+    }
+
     .portfolio p {
         font-size: 1.8rem;
     }
@@ -1403,12 +1417,12 @@ img {
 .projects__bg.projects__examples {
     background-image: url(../img/portfolio-blog-bg.svg);
     background-size: cover;
-    height: 40vh;
+    height: 70vh;
 }
 
 @media screen and (min-width: 20em) {
-    .projects__bg {
-        height: 70vh;
+    .projects__bg.projects__examples {
+        height: 40vh;
     }
 }
 
@@ -1422,7 +1436,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
+    margin: 1.3rem 0;
 }
 
 .projects__page-title {

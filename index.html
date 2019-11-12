@@ -7,7 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name = "description" content= "Jamie Moore is a front end developer based in Manchester that specialises in building accessibile, usable and responsive websites.">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7cLobster+Two%7cPoppins&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/b65bf85635.js" crossorigin="anonymous" async></script>
+    <link rel="shortcut icon" type="image/jpg" href="img/site-logo.jpg">
+    <link rel = "canonical" href = "http://www.17076460.webdevmmu.uk/jamie-portfolio/jamie-portfolio/index.html">
+
+    <!--Copied code below from stack overflow -->
+
+    <!-- iPhone(first generation or 2G), iPhone 3G, iPhone 3GS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/site-logo.jpg">
+    <!-- iPad and iPad mini @1x -->
+    <link rel="apple-touch-icon" sizes="76x76" href="img/site-logo.jpg">
+    <!-- iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s, iPhone 6, iPhone 6s, iPhone 7, iPhone 7s, iPhone8 -->
+    <link rel="apple-touch-icon" sizes="120x120" href="img/site-logo.jpg">
+    <!-- iPad and iPad mini @2x -->
+    <link rel="apple-touch-icon" sizes="152x152" href="img/site-logo.jpg">
+    <!-- iPad Pro -->
+    <link rel="apple-touch-icon" sizes="167x167" href="img/site-logo.jpg">
+    <!-- iPhone X, iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/site-logo.jpg">
 </head>
 <body>
     <!--Accessibility Button-->
@@ -23,7 +42,7 @@
             </nav>
     
     <section class = "master__title">
-        <h1 class="master__heading">Jamie Moore</h1>
+        <h1 class="master__heading">Hi, I'm Jamie Moore</h1>
         <p class="master__job">I make responsive, accessible, useable websites.</p>
         <a href="portfolio.html" class="btn" title = "Portfolio">View My Work</a>
     </section>
@@ -38,7 +57,7 @@
         </figure>
             <p class="about__description"><span class = "about__bold-text">I am a front-end developer that is</span> currently a third-year student studying Web Development at The Manchester Metropolitan University based in Manchester. This course has equipped me with the knowledge and skills to build high quality websites that are responsive, accessible and usable to all users.</p>
 
-            <p class="about__description"><span class = "about__bold-text">My passion lays around building highly</span> accessible and usable sites that also look great aesthetically. Every decision made within the design and development of a website is to focus on a simple and easy user experience for the user.</p>
+            <p class="about__description"><span class = "about__bold-text">My passion lays around building highly</span> accessible and usable sites that also look great aesthetically. Every decision made within for the design of a website is to focus on a simple and easy user experience for the user.</p>
 
             <p class="about__description"><span class = "about__bold-text">I am a goal driven individual that is</span> always willing to learn and develop new skills in order to be able to provide the best and most professional services to you. Other than that, you will usually find me consuming my body weight in coffee!</p>
             </div>
@@ -61,17 +80,17 @@
                 <li class="services__item">
                     <i class="fab fa-css3-alt fa-5x services__icon"></i>
                     <h4 class="services__item-title">CSS3</h4>
-                    <p class="services__description">The next phase after marking up a website is to make all that boring and bold text on the website look beautiful and easy to look at. I begin each project with a mobile first approach and that means I style the website to look good on mobile devices across many screen sizes then use media queries to adapt to make the site look good on various screen sizes and browsers.</p>
+                    <p class="services__description">The next phase after marking up a website is to make all that boring and bold text on the website look beautiful. I begin each project with a mobile first approach by styling the website to look good on mobile devices then use media queries to adapt the content to the screen based on its' size.</p>
                 </li>
                 <li class="services__item">
                     <i class="fab fa-js-square fa-5x services__icon"></i>
                     <h4 class="services__item-title">JavaScript</h4>
-                    <p class="services__description">I utilise JavaScript to add behaviour and interactivity to the website to enable users to interact with any website I build. You can do pretty much anything with JavaScript to a website and although my knowledge of it is good, but not great, I am learning every day to ensure my ability to utilise JavaScript to its full potential in order to produce the best websites possible.</p>
+                    <p class="services__description">Whenever it is needed, I utuilise the power of JavaScript to implement behaviour and interactivity to a website. My current knowledge of JavaScript is good - but not great- and I am currently working hard to improve my JavaScript skills.</p>
                 </li>
                 <li class="services__item">
                     <i class="fas fa-user fa-5x services__icon"></i>
                     <h4 class="services__item-title">User Experience Design</h4>
-                    <p class="services__description">A strong passion of mine is to ensure the user experience for users on the websites I’m involved with building, is the most simple and easiest of tasks to achieve their goal. The process begins with efficient user research and constant testing the website with the user during the development process.</p>
+                    <p class="services__description">A strong passion of mine is user experience, after all, it is pointless having a website if your user is not going to enjoy using it. I have good knowledge of the user experience design process so any project I am involved in, I will ensure that the website is focused on the users needs and goals. This not only results in a better experience for your user, but you potentially have a loyal user/customer if they enjoy using your website.</p>
                 </li>
             </ul>
         </div>
@@ -85,11 +104,11 @@
         </div>
 
         <div class = "contact__form-container">
-        <form action="https://formspree.io/xeqqqyvp" method="POST" class = "contact__form">
+        <form action="https://formspree.io/mleendab" method="POST" class = "contact__form">
 
             <div class="contact__label-container">
             <label for = "full-name" class = "contact__label">Name</label>
-            <input type= "text" id = "full-name" class = "contact__input" placeholder= "Your Full Name" required>
+            <input type= "text" id = "full-name" name = "name" class = "contact__input" placeholder= "Your Full Name" required>
             </div>
 
             <div class="contact__label-container">
@@ -99,14 +118,14 @@
 
             <div class="contact__label-container">
             <label for = "email" class = "contact__label">Your Email</label>
-            <input type="email" id = "email" class="contact__input" placeholder="Your Email" required>
+            <input type="email" id = "email" name = "_replyto" class="contact__input" placeholder="Your Email" required>
             </div>
 
             <div class="contact__label-container">
             <label for = "message" class = "contact__label">Your Message</label>
-            <textarea id = "message" cols="30" rows="10" class="contact__input" placeholder= "Your Message" required></textarea>
+            <textarea id = "message" name = "message" cols="30" rows="10" class="contact__input" placeholder= "Your Message" required></textarea>
 
-            <button class="btn contact__submit" type= "submit">Submit</button>
+            <button class="btn contact__submit" type= "submit" value = "Send">Submit</button>
             </div>
             
         </form>
@@ -121,28 +140,28 @@
 
                 <!--Ico mood svg icons for social media, learn't from Chris Coyier book practival svg-->
                 <li>
-                    <a href = "https://www.facebook.com/jamie.moore.5245" class = "social__icon" title = "Facebook">
+                    <a href = "https://www.facebook.com/jamie.moore.5245" class = "social__icon">
                         <svg class = "social__media-icon">
                             <use xlink:href="img/sprite.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href = "https://github.com/JamieMoore1994" class = "social__icon" title = "Github">
+                    <a href = "https://github.com/JamieMoore1994" class = "social__icon">
                         <svg class = "social__media-icon">
                             <use xlink:href="img/sprite.svg#icon-github"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href = "https://www.linkedin.com/feed/" class = "social__icon" title = "LinkedIn">
+                    <a href = "https://www.linkedin.com/feed/" class = "social__icon">
                         <svg class = "social__media-icon">
                             <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href = "https://twitter.com/home?logout=1573165667663&prefetchTimestamp=1573165667668" class = "social__icon" title = "Twitter">
+                    <a href = "https://twitter.com/home?logout=1573165667663&prefetchTimestamp=1573165667668" class = "social__icon">
                         <svg class = "social__media-icon">
                             <use xlink:href="img/sprite.svg#icon-twitter"></use>
                         </svg>
@@ -163,7 +182,7 @@
             </div>
 
             <div class="footer__disclaimer">
-                    <p class="master__footer-text">Copyright&copy; Jamie Moore - 2019</p>
+                    <p class="master__footer-text">Copyright &copy; Jamie Moore - 2019</p>
             </div>
 
             <a href = "#top" class = "btn back-top" title = "Top of page">Back To Top</a>
