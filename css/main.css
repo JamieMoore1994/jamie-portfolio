@@ -154,7 +154,7 @@ img {
 
 @media screen and (min-width: 90em) {
     .master__header {
-        height: 61vh;
+        height: 68vh;
     }
 }
 
@@ -946,6 +946,24 @@ img {
     margin-top: 15rem;
 }
 
+.industry__author {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem 0;
+    color: var(--color-gold-darker);
+}
+
+.industry__author-name {
+    font-size: 1.8rem;
+}
+
+.industry__author-date {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
 .industry__title {
     font-family: 'Alfa Slab One', cursive;
     color: var(--color-grey-light);
@@ -1004,6 +1022,7 @@ img {
     shape-outside: circle(50%);
     margin-top: 1rem;
     shape-margin: 1vw;
+    margin-right: 1.3rem;
 }
 
 .industry__job-roles {
@@ -1017,6 +1036,7 @@ img {
 
 .industry__img-caption {
     font-size: 1.1rem;
+    padding: 1rem 0 1.5rem 0;
     color: var(--color-gold-darker);
     font-style: italic;
 }
@@ -1076,6 +1096,22 @@ img {
 @media screen and (min-width: 45em) {
     .industry__title {
         font-size: 5rem;
+    }
+
+    .industry__author {
+        max-width: 65em;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .industry__author-name {
+        font-size: 2rem;
+    }
+    
+    .industry__author-date {
+        font-size: 1.6rem;
     }
 
     .industry__intro {
@@ -1286,9 +1322,6 @@ img {
     .portfolio {
         max-width: 65em;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
     }
 
     .portfolio__page-title {
@@ -1338,9 +1371,6 @@ img {
     .performance {
         max-width: 65em;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
     }
 
     .performance__page-title {
@@ -1681,12 +1711,12 @@ img {
 
 .project__logo.plan img {
     border-radius: 10rem;
-    margin: 1rem 1rem 0 0;
+    margin: 1rem 2.5rem 0 0;
 }
 
 @media screen and (min-width: 39em) {
     .project__logo.plan img {
-        margin: 2rem 2rem 0 0;
+        margin: 2rem 3rem 0 0;
     }
 }
 
@@ -1785,9 +1815,9 @@ img {
 .back-top {
     position: relative;
     bottom: 2%;
-    left: 75%;
+    left: 60%;
     font-size: 1rem;
-    margin: 1.2rem 0 0 1.2rem;
+    margin: 1.2rem 1rem;
 }
 
 .master__footer p {
@@ -1802,6 +1832,10 @@ img {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+}
+
+.footer__disclaimer p {
+    text-align: left;
 }
 
 @media screen and (min-width: 42em) {
@@ -1838,6 +1872,14 @@ img {
         justify-content: center;
         align-items: center;
         margin-top: 1.3rem;
+    }
+
+    .footer__disclaimer p {
+        font-size: 1.8rem;
+    }
+
+    .back-top {
+        left: 75%;
     }
 }
 
