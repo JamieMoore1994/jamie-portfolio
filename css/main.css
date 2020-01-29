@@ -845,6 +845,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--color-primary-lighter);
+    border-radius: 3rem;
 }
 
 
@@ -869,6 +870,8 @@ img {
 
 .blogs__photo img {
     display: block;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
  }
 
 /*Color overlay for images */
@@ -881,6 +884,8 @@ img {
     left: 0;
     right: 0;
     background-color: var(--color-image-tint);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
 }
 
 .blogs__intro-title {
@@ -930,22 +935,6 @@ img {
 /*--------------------------------------------
             Industry Blog Page
 --------------------------------------------*/
-.industry__header {
-    height: 60vh;
-    background-color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: skew(0deg, -7deg);
-    margin-top: -15rem;
-    margin-bottom: 10rem;
-}
-
-.industry__container {
-    transform: skew(0deg, 7deg);
-    margin-top: 15rem;
-}
-
 .industry__author {
     display: flex;
     justify-content: start;
@@ -1196,11 +1185,13 @@ img {
     background-size: cover;
     height: 40vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: space-around;
+    flex-direction: column;
 }
 
 .portfolio__header-title {
+    margin: 2rem 0;
     color: var(--color-grey-light);
     text-transform: uppercase;
     letter-spacing: .2rem;
