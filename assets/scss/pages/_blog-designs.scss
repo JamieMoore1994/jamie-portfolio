@@ -27,11 +27,17 @@
 
     &__author {
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        padding: 2rem 0;
         color: $color-gold-darker;
+
+        &--img {
+            border-radius: 50%;
+            height: 10rem;
+            width: 10rem;
+            margin: 3rem 0 1rem 0;
+        }
     
         &-name {
             font-size: 1.8rem;

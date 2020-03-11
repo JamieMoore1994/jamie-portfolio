@@ -1,0 +1,226 @@
+// Heading and introduction section of blogs
+.blog-content {
+    padding: 1rem;
+
+    &__title {
+        margin-top: 1rem;
+        font-size: 2rem;
+        line-height: 1.2;
+        padding-bottom: .8rem;
+        color: $color-primary;
+    }
+    & p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $color-grey-dark;
+        padding: .8rem 0;
+    }
+}
+
+/*------------------------------------*/
+//600px
+@media screen and (min-width: 600px) {
+    .blog-content {
+        padding: 2rem;
+
+        &__title {
+            font-size: 2.8rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+//750px
+@media screen and (min-width: 750px) {
+    .blog-content {
+        padding: 2rem 3rem;
+    }
+}
+
+//960px
+@media screen and (min-width: 960px) {
+    .blog-content {
+        @include maxWidthSmall;
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        & p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+//1200px
+@media screen and (min-width: 1200px) {
+    .blog-content {
+        @include maxWidthMedium;
+    }
+}
+
+// Main blog body styling
+.blog-body {
+    padding: 1rem;
+    & p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $color-grey-dark;
+        padding: .8rem 0;
+    }
+
+    &__titles {
+        font-size: 2rem;
+        line-height: 1.2;
+        padding: 1.5rem 0 .5rem 0;
+        color: $color-gold-primary;
+    }
+
+    &__captions {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem 2rem 1rem;
+        color: $color-primary;
+        font-style: italic;
+    }
+
+    &__examples {
+
+        &--item {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__figures {
+        img {
+            box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+/*------------------------------------*/
+//600px
+@media screen and (min-width: 600px) {
+    .blog-body {
+        padding: 2rem;
+
+        &__captions {
+            padding-left: 2rem;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+//750px
+@media screen and (min-width: 750px) {
+    .blog-body {
+        padding: 2rem 3rem;
+
+        &__titles {
+            font-size: 2.2rem;
+        }
+
+        &__captions {
+            padding-left: 3rem;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+//960px
+@media screen and (min-width: 960px) {
+    .blog-body {
+        @include maxWidthSmall;
+
+        &__titles {
+            font-size: 2.5rem;
+        }
+
+        & p {
+            font-size: 1.8rem;
+            margin: 0 auto;
+        }
+
+        &__examples {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: start;
+            align-items: start;
+            gap: 2rem;
+            position: relative;
+
+            &--container {
+                position: relative;
+                left: 50%;
+            }
+
+            &--item.large-image {
+                @include maxWidthSmall;
+                grid-column: 1 / span 2;
+            }
+        }
+    } 
+}
+
+//1200px
+@media screen and (min-width: 1200px) {
+    .blog-body {
+        @include maxWidthMedium;
+
+        &__examples {
+
+            &--item.large-image {
+                @include maxWidthMedium;
+            }
+        }
+    }
+}
+
+// Adding padding to the titles inside so I dont affect every instance of this class
+.blog-container--large {
+
+    .blog-body__titles {
+        padding: 1rem;
+    }
+}
+
+/*------------------------------------*/
+//600px
+@media screen and (min-width: 600px) {
+    .blog-container--large {
+
+        .blog-body__titles {
+            padding: 2rem;
+        }
+    }
+}
+
+//750px
+@media screen and (min-width: 750px) {
+    .blog-container--large {
+
+        .blog-body__titles {
+            padding: 2rem 3rem;
+        }
+    }
+}
+
+//960px
+@media screen and (min-width: 960px) {
+    .blog-container--large {
+
+        .blog-body__titles {
+            @include maxWidthSmall;
+        }
+    }
+}
+
+//1200px
+@media screen and (min-width: 1200px) {
+    .blog-container--large {
+
+        .blog-body__titles {
+            @include maxWidthMedium;
+        }
+    }
+}
