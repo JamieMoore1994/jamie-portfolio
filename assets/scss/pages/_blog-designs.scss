@@ -87,14 +87,6 @@
         display: flex;
     }
 
-    .skills__report {
-        float: left;
-        shape-outside: circle(50%);
-        margin-top: 1rem;
-        shape-margin: 1vw;
-        margin-right: 1.3rem;
-    }
-
     &__job-roles {
         padding: .8rem 0;
 
@@ -104,10 +96,10 @@
     }
 
     &__img-caption {
-        font-size: 1.1rem;
-        padding: 1rem 0 1.5rem 0;
-        color: $color-gold-darker;
-        font-style: italic;
+            font-size: 1.1rem;
+            padding: 1rem 0 1.5rem 0;
+            color: $color-gold-darker;
+            font-style: italic;
     }
 
     &__reference {

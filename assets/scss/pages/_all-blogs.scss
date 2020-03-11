@@ -1,3 +1,49 @@
+/*--------------------------------------------
+            Global blog styles
+--------------------------------------------*/
+.blog__credit {
+    color: $color-gold-darker;
+}
+
+.blog__links {
+    color: $color-gold-darker;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: $color-gold-darker;
+        color: $color-grey-light;
+        text-decoration: none;
+        padding: .1rem;
+    }
+}
+
+.blog__author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $color-gold-darker;
+
+    &--img {
+        border-radius: 50%;
+        height: 10rem;
+        width: 10rem;
+        margin: 3rem 0 1rem 0;
+    }
+
+    &-name {
+        font-size: 1.8rem;
+    }
+
+    &-date {
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+}
+
+
 // Heading and introduction section of blogs
 .blog-content {
     padding: 1rem;
@@ -52,16 +98,17 @@
     }
 }
 
-//1200px
-@media screen and (min-width: 1200px) {
-    .blog-content {
-        @include maxWidthMedium;
-    }
-}
+// //1200px
+// @media screen and (min-width: 1200px) {
+//     .blog-content {
+//         @include maxWidthMedium;
+//     }
+// }
 
 // Main blog body styling
 .blog-body {
     padding: 1rem;
+
     & p {
         font-size: 1.5rem;
         margin-bottom: 1rem;
@@ -93,6 +140,29 @@
     &__figures {
         img {
             box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+        }
+    }
+
+    .skills-report {
+        float: left;
+        shape-outside: circle(50%);
+        margin-top: 1rem;
+        shape-margin: 1vw;
+        margin-right: 1.3rem;
+    }
+
+    &__code-background {
+        background-color: $color-primary;
+        padding: 1rem;
+
+        .code-examples {
+            color: $color-grey-light;
+            font-size: 1.8rem;
+
+            &.inline {
+                color: $color-primary;
+                font-size: 1.8rem;
+            }
         }
     }
 }
@@ -154,30 +224,28 @@
                 left: 50%;
             }
 
+            // This spans images accross both grid columns
             &--item.large-image {
                 @include maxWidthSmall;
                 grid-column: 1 / span 2;
+            }
+
+            // For the wireframe illustations on the portfolio development blog
+            .wireframes {
+                justify-self: center;
             }
         }
     } 
 }
 
-//1200px
-@media screen and (min-width: 1200px) {
-    .blog-body {
-        @include maxWidthMedium;
-
-        &__examples {
-
-            &--item.large-image {
-                @include maxWidthMedium;
-            }
-        }
-    }
-}
-
 // Adding padding to the titles inside so I dont affect every instance of this class
 .blog-container--large {
+
+    .normal-text {
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: $color-grey-dark;
+    }
 
     .blog-body__titles {
         padding: 1rem;
@@ -188,6 +256,10 @@
 //600px
 @media screen and (min-width: 600px) {
     .blog-container--large {
+
+        .normal-text {
+            padding: 2rem;
+        }
 
         .blog-body__titles {
             padding: 2rem;
@@ -209,6 +281,10 @@
 @media screen and (min-width: 960px) {
     .blog-container--large {
 
+        .normal-text {
+            font-size: 1.8rem;
+        }
+
         .blog-body__titles {
             @include maxWidthSmall;
         }
@@ -218,9 +294,6 @@
 //1200px
 @media screen and (min-width: 1200px) {
     .blog-container--large {
-
-        .blog-body__titles {
-            @include maxWidthMedium;
-        }
+        @include maxWidthMedium;
     }
 }
