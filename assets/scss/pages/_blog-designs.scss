@@ -1,0 +1,441 @@
+/*--------------------------------------------
+            Global blog styles
+--------------------------------------------*/
+.blog__credit {
+    color: $color-gold-darker;
+}
+
+.blog__links {
+    color: $color-gold-darker;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: $color-gold-darker;
+        color: $color-grey-light;
+        text-decoration: none;
+        padding: .1rem;
+    }
+}
+
+/*--------------------------------------------
+            Industry Blog Page
+--------------------------------------------*/
+.industry {
+    padding: 2rem;
+
+    &__author {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 2rem 0;
+        color: $color-gold-darker;
+    
+        &-name {
+            font-size: 1.8rem;
+        }
+    
+        &-date {
+            font-size: 1.4rem;
+            font-style: italic;
+        }
+    }
+
+    &__title {
+        font-family: 'Alfa Slab One', cursive;
+        color: $color-grey-light;
+        font-size: 3.5rem;
+        letter-spacing: .5rem;
+        line-height: 1.2;
+        animation: animateBlogTitle 800ms ease-in;
+    }
+
+    &__blog-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        padding-bottom: .8rem;
+    }
+
+    &__brexit-img {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+
+    & p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $color-grey-dark;
+        padding: .8rem 0;
+    }
+
+    &__sub-titles {
+        font-size: 2rem;
+        line-height: 1.2;
+        padding: 1.5rem 0 .5rem 0;
+        color: $color-gold-primary;
+    }
+
+    &__business {
+        display: flex;
+    }
+
+    .skills__report {
+        float: left;
+        shape-outside: circle(50%);
+        margin-top: 1rem;
+        shape-margin: 1vw;
+        margin-right: 1.3rem;
+    }
+
+    &__job-roles {
+        padding: .8rem 0;
+
+        & img {
+            box-shadow: 0 .2rem .5rem rgba(0,0,0,.5);
+        }
+    }
+
+    &__img-caption {
+        font-size: 1.1rem;
+        padding: 1rem 0 1.5rem 0;
+        color: $color-gold-darker;
+        font-style: italic;
+    }
+
+    &__reference {
+        margin: 2rem 0 4rem 0;
+    }
+
+    &__references {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        background-color: $color-grey-light-2;
+        padding: 2rem;
+
+        &-item {
+            font-size: 1.2rem;
+            color: $color-primary;
+            padding: 1rem 0;
+
+            & a {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__blog-buttons {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_blog-btn {
+        font-size: 1rem;
+    }
+
+    @media screen and (min-width: 45em) {
+        &__title {
+            font-size: 5rem;
+        }
+    
+        &__author {
+            max-width: 65em;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        &__author-name {
+            font-size: 2rem;
+        }
+        
+        &_author-date {
+            font-size: 1.6rem;
+        }
+    
+        &__intro {
+            max-width: 65em;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        &__blog-title {
+            font-size: 3.3rem;
+        }
+    
+        & p {
+            font-size: 1.8rem;
+        }
+    
+        &__brexit {
+            max-width: 65em;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__sub-titles {
+            font-size: 3rem;
+        }
+    
+        &__blog-buttons {
+            max-width: 65em;
+            margin: 0 auto;
+        }
+    
+        &__blog-btn {
+            font-size: 1.5rem;
+        }
+    
+        &__references {
+            max-width: 65em;
+            margin: 0 auto;
+        }
+    
+        &__references-item {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 50em) {
+        &__skills-section {
+            max-width: 65em;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__blog-circle {
+            max-width: 65em;
+            margin: 0 auto;
+        }
+    
+        &__job-section {
+            max-width: 65em;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__img-caption {
+            font-size: 1.3rem;
+            color: $color-gold-darker;
+            font-style: italic;
+        }
+    }
+}
+
+@keyframes animateBlogTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*--------------------------------------------
+        Portfolio Development Blog Page
+--------------------------------------------*/
+.portfolio__header {
+    background-image: url(../assets/img/portfolio-blog-bg.svg);
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-around;
+    flex-direction: column;
+}
+
+.portfolio__header-title {
+    margin: 2rem 0;
+    color: $color-grey-light;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1.2;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    animation: animatePortfolioTitle 700ms ease;
+}
+
+@keyframes animatePortfolioTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate();
+    }
+}
+
+.portfolio {
+    padding: 2.2rem 1.5rem;
+
+    &__blog-intro {
+        margin: 1.5rem 0;
+    }
+
+    &__page-title {
+        color: $color-primary;
+        font-size: 2.5rem;
+        line-height: 1.3;
+        padding-bottom: .8rem;
+    }
+
+    & p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $color-grey-dark;
+        padding: .8rem 0;
+    }
+
+    &__sub-titles {
+        font-size: 2rem;
+        padding: 1.5rem 0 0 0;
+        color: $color-gold-primary;
+    }
+
+    &__wireframes {
+        padding: 1.5rem 0;
+    }
+
+    &__code {
+        padding: 1rem 0 0 0;
+
+        & figcaption {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: $color-grey-dark;
+            padding: .8rem 0;
+        }
+    }
+
+    &__code-background {
+        background-color: $color-primary;
+        padding: 1rem;
+
+        .code-examples {
+            color: $color-grey-light;
+            font-size: 1.8rem;
+
+            &.inline {
+                color: $color-primary;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__build-grid {
+        margin-bottom: 1rem;
+    }
+
+    &__github {
+        margin: 1.5rem 0;
+    }
+
+    &__resources {
+        padding: 1.2rem 2rem;
+
+        & li {
+            padding: .5rem;
+        }
+
+        & a {
+            text-decoration: underline;
+            color: $color-grey-dark;
+            font-size: 1.5rem;
+        }
+
+        & a:hover,
+        & a:focus {
+            background-color: $color-button-background;
+            color: $color-grey-light;
+            transition: all 200ms ease-in;
+            text-decoration: none;
+        }
+    }
+
+    @media screen and (min-width: 39em) {
+        &-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 45em) {
+        & {
+            max-width: 65em;
+            margin: 0 auto;
+
+            &__page-title {
+                font-size: 3.3rem;
+            }
+
+            &__header-title {
+                font-size: 3.3rem;
+            }
+
+            & p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------
+        Portfolio Performance Blog Page
+--------------------------------------------*/
+.performance {
+    padding: 2.2rem 1.5rem;
+
+    &__blog-intro {
+        margin: 2.5rem 0;
+    }
+
+    &__page-title {
+        color: var(--color-primary);
+        font-size: 2.5rem;
+        line-height: 1.3;
+        padding-bottom: .8rem;
+    }
+
+    &__optimisation {
+        padding: .5rem 0 1.5rem 0;
+    }
+
+    & p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--color-grey-dark);
+        padding: .8rem 0;
+    }
+
+    @media screen and (min-width: 45em) {
+        & {
+            max-width: 65em;
+            margin: 0 auto;
+
+            &__page-title {
+                font-size: 3.3rem;
+            }
+
+            & p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+

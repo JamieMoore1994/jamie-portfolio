@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-button-background;
+    color: $color-button-text;
+    padding: 1.3rem 2rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 200ms ease-in;
+}
+
+@media screen and (min-width: 40em) {
+    .btn {
+        font-size: 1.5rem;
+    }
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: $color-gold-darker;
+    box-shadow: 0 2rem 5em (0,0,0,.8);
+    transform: translateY(-.3rem);
+}
+
+.btn:active {
+    transform: translateY(-.1rem);
+}
