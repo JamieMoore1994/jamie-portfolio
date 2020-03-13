@@ -79,6 +79,7 @@
 //750px
 @media screen and (min-width: 750px) {
     .blog-content {
+        @include maxWidthSmall;
         padding: 2rem 3rem;
     }
 }
@@ -109,11 +110,15 @@
 .blog-body {
     padding: 1rem;
 
-    & p {
+    & p, &__list--item {
         font-size: 1.5rem;
         margin-bottom: 1rem;
         color: $color-grey-dark;
         padding: .8rem 0;
+    }
+
+    &__list {
+        padding: 0 2rem;
     }
 
     &__titles {
@@ -165,6 +170,47 @@
             }
         }
     }
+
+    &__references {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        background-color: $color-grey-light-2;
+        padding: 2rem;
+
+        &--item {
+            font-size: 1.3rem;
+            color: $color-primary;
+            padding: 1rem 0;
+
+            & a {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__resources {
+        padding: 1.2rem 2rem;
+
+        & li {
+            padding: .5rem;
+        }
+
+        & a {
+            text-decoration: underline;
+            color: $color-grey-dark;
+            font-size: 1.5rem;
+        }
+
+        & a:hover,
+        & a:focus {
+            background-color: $color-button-background;
+            color: $color-grey-light;
+            transition: all 200ms ease-in;
+            text-decoration: none;
+        }
+    }
 }
 
 /*------------------------------------*/
@@ -183,6 +229,7 @@
 //750px
 @media screen and (min-width: 750px) {
     .blog-body {
+        @include maxWidthSmall;
         padding: 2rem 3rem;
 
         &__titles {
@@ -192,22 +239,6 @@
         &__captions {
             padding-left: 3rem;
             font-size: 1.3rem;
-        }
-    }
-}
-
-//960px
-@media screen and (min-width: 960px) {
-    .blog-body {
-        @include maxWidthSmall;
-
-        &__titles {
-            font-size: 2.5rem;
-        }
-
-        & p {
-            font-size: 1.8rem;
-            margin: 0 auto;
         }
 
         &__examples {
@@ -234,6 +265,20 @@
             .wireframes {
                 justify-self: center;
             }
+    }
+}
+
+//960px
+@media screen and (min-width: 960px) {
+    .blog-body {
+        &__titles {
+            font-size: 2.5rem;
+        }
+
+        & p, &__list--item {
+            font-size: 1.8rem;
+            margin: 0 auto;
+        }
         }
     } 
 }
@@ -296,4 +341,9 @@
     .blog-container--large {
         @include maxWidthMedium;
     }
+}
+
+.container--medium {
+    max-width: 1100px;
+    margin: 0 auto;
 }
