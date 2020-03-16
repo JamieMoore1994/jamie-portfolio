@@ -195,11 +195,7 @@
 
             <div class="blog-body">
                 <h3 class="blog-body__titles">Branding</h3>
-                <p>Throughout my website there is a theme of wavy SVG background images which I created to try and make the website more appealing and interesting. However, there is some inconsistency on the industry blog post and blogs page – where the theme could have been implemented better.</p>
-
-                <p>There was a major issue on the industry page where the curvy SVG theme changes to a different background – which resulted in feedback stating if a user landed on that webpage first before any other page, they would think that they are on a completely different website. To fix this I gave the industry blog post the same SVG background as the other blog posts.</p>
-                
-                <p>Also, on each blog post, feedback from users suggested there could be a better way to clarify I wrote the posts, so to fix this I added a small image of myself near the blog title.</p>
+                <p>Throughout the website there is a theme of the wavy SVG background, but there is some inconsistency. There was also room for improvement on the blog posts to give the user more clarity that I wrote the blog post. To improve this I ensured the background on every page had a curvy SVG background and added a small image of myself to each blog post.</p>
             </div>
 
             <!--Before branding fixes-->
@@ -268,6 +264,35 @@
                 </ul>
             </div>
 
+            <div class="blog-body">
+                <h3 class="blog-body__titles">Moving my CSS to SASS</h3>
+                <p>Currently, my portfolio site was all styled in one long CSS file - with a total of 1884 lines of code. As I will be consistently adding pages to my website, having one long CSS file would not be flexible and easy to edit. SASS allows you to divide up all your CSS into  multiple files for a more organised and effient way to edit each page of the website, and the main benefit is that only one HTTP request is called because you can compile all the SASS files into one CSS file (Mauri, 2018). The compiled CSS file is also 11kb less than the original CSS file - and that is with two extra pages being added and styled.</p>
+            </div>
+
+            <!--After branding fixes-->
+            <div class="blog-container--large">
+                <h4 class="blog-body__titles">Before and after using SASS</h4>
+                <ul class="blog-body__examples">
+                    <li class="blog-body__examples--item">
+                        <figure class="blog-body__figures">
+                            <img src="assets/img/blog-photos/before-compiling.jpg" alt="Showing the file size of the CSS file for the portfolio website">
+                            <figcaption class = "blog-body__captions">
+                                Ther orginal file size before using SASS
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="blog-body__examples--item">
+                        <figure class="blog-body__figures">
+                            <img src="assets/img/blog-photos/after-compiling.jpg" alt="Showing the file size of the CSS file after using SASS to compile all SASS files">
+                            <figcaption class = "blog-body__captions">
+                                File size for all the compiled SASS files 11kb lower
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+
         </section>
            
     </main>
@@ -275,7 +300,11 @@
     <aside class="blog-body blog-container">
             <ul class="blog-body__references">
                     <li class="blog-body__references--item">
-                        Heijmans, M. (2019) How to create the right meta description. 18th October. Yoast. [Online] [Accessed on the 4th November 2019] <a href = "https://yoast.com/meta-descriptions/" title = "Yoast SEO article">https://yoast.com/meta-descriptions/</a>
+                        Mauri, C. (2018) <i>7 benefits of using SASS over conventional CSS</i>. 14th March. Mugo Web. [Online] [Accessed on the 13th March 2020] <a href = "https://www.mugo.ca/Blog/7-benefits-of-using-SASS-over-conventional-CSS/" title = "Link to this referenced article">https://www.mugo.ca/Blog/7-benefits-of-using-SASS-over-conventional-CSS</a>
+                    </li>
+
+                    <li class="blog-body__references--item">
+                        Pierce, P. (No Date) <i>10 Guidelines For Navigation Usability</i>. [Online] [Accessed on the 13th March 2020] <a href = "https://usabilitygeek.com/10-guidelines-for-navigation-usability/" title = "Link to this referenced article">https://usabilitygeek.com/10-guidelines-for-navigation-usability/</a>
                     </li>
                 </ul>
         </aside>
