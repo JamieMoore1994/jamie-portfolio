@@ -129,10 +129,11 @@
     }
 
     &__captions {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         padding: 0.5rem 1rem 2rem 1rem;
         color: $color-primary;
         font-style: italic;
+        align-self: flex-start;
     }
 
     &__examples {
@@ -143,10 +144,15 @@
     }
 
     &__figures {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
         img {
             box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
         }
-    }
+    }   
 
     .skills-report {
         float: left;
@@ -160,15 +166,12 @@
         background-color: $color-primary;
         padding: 1rem;
 
-        .code-examples {
+        .code-example {
             color: $color-grey-light;
-            font-size: 1.8rem;
-
-            &.inline {
-                color: $color-primary;
-                font-size: 1.8rem;
-            }
+            font-size: 1.5rem;
+            font-weight: 700;
         }
+
     }
 
     &__references {
@@ -210,6 +213,17 @@
             transition: all 200ms ease-in;
             text-decoration: none;
         }
+    }
+}
+
+.code-example {
+    color: $color-grey-dark;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    &.inline {
+        color: $color-primary;
+        font-size: 1.5rem;
     }
 }
 
@@ -265,6 +279,11 @@
             .wireframes {
                 justify-self: center;
             }
+        }
+    }
+
+    .code-example {
+        font-size: 1.8rem;
     }
 }
 
@@ -279,9 +298,8 @@
             font-size: 1.8rem;
             margin: 0 auto;
         }
-        }
-    } 
-}
+    }
+} 
 
 // Adding padding to the titles inside so I dont affect every instance of this class
 .blog-container--large {

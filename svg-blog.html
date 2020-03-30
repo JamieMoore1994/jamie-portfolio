@@ -53,7 +53,7 @@
 
             <div class="blog-content__intro">
                 <h2 class="blog-content__title">I made an SVG animated sequence, but how did I do this ?</h2>
-                <p>Creating SVG graphics and creating an animated sequence was a fun and challenging process, find out in the blog my process into creating this sequence.</p>
+                <p>Creating SVG graphics and blending them into an animated sequence was a fun and challenging process, find out in this blog the process into creating this sequence.</p>
             </div>
         </section>
 
@@ -77,7 +77,7 @@
 
             <div class="blog-body blog-container">
                 <h3 class="blog-body__titles">Definition</h3>
-                <p>Currently on the web, the two main types of image files you would come across are raster images and vector graphics. Bitmap images – usually in the file format JPG, PNG, JPEG and GIF – is basically a grid where each individual square of the image is a pixel that contains colour information (Figma, no date). Vector graphics are drawn up with mathematical calculations from one point to another that usually form lines and shapes (Gomez Graphics, no date).</p>
+                <p>Currently on the web, the two popular of image formats you will come across are raster images and vector graphics. Raster images – usually in the file format JPG, PNG, JPEG and GIF – is basically a grid where each individual square of the image is a pixel that contains colour information (Figma, no date). Vector graphics are drawn up with mathematical calculations from one point to another that usually form lines and shapes (Gomez Graphics, no date).</p>
 
                 <p>SVG (Scalable Vector Graphics) is a vector graphic format which is based on XML and is used to display graphics. The main benefit of using SVG images is that they are not tied to any pixel dimension – meaning the image is scalable and will look visually crisp at any size you choose (Coyier, 2016).</p>
 
@@ -90,7 +90,7 @@
 
             <div class="blog-body blog-container">
                 <h3 class="blog-body__titles">Set Up</h3>
-                <p>I created all my SVG images using Adobe Illustrator then to bring the project to life, HTML alongside adopting a BEM Methodology approach was used and CSS (SCSS) to style and animate the SVG images.</p>
+                <p>I used Adobe Illustrator to create and export the SVG images then HTML and CSS to mark-up, style and animate the SVG images.</p>
             </div>
 
             <div class="blog-body blog-container">
@@ -153,8 +153,8 @@
 
             <!--Creating svg images section-->
             <div class="blog-body blog-container">
-                <h3 class="blog-body__titles">Creating the SVG images</h3>
-                <p>Creating the cars was simply a matter of combining rectangles and circles together to form the car body and tires. I started by drawing the shapes I needed to build the car and then used pathfinder to combine the shapes together. The text was a matter of writing the text, taking away the fill colour of the text and increasing the stroke width.</p>
+                <h3 class="blog-body__titles">Creating the SVG images in Illustrator</h3>
+                <p>Creating the cars was simply a matter of drawing rectangles and circles then combining the paths together to form the car body and tires. I started by drawing the shapes I needed to build the car and then used pathfinder to combine the shapes together. The animated text was a matter of writing the text in Illustrator, taking away the fill colour as this cannot be animated, and increasing the stroke width.</p>
             </div>
 
             <!--Creating a car together on Illustrator-->
@@ -204,8 +204,8 @@
 
                 <!--Organised HTML and SCSS section-->
                 <div class="blog-body blog-container">
-                    <h3 class="blog-body__titles">Organising the files before animating</h3>
-                    <p>Now to the fun part, bringing the SVG images to life by animating them. Using SCSS to style and animate this website proved to be beneficial due to being able to organise and style components and pages on seperate files. The whole animation is in one <code class = "code-example">section</code> tag with the four seperate animated sequences being wrapped around four seperate <code class = "code-example">div</code> tags. Plenty of comments was neccessary to differentiate between each SVG image and find content easily.</p>
+                    <h3 class="blog-body__titles">Organisation</h3>
+                    <p>In the future I will make use of PHP includes to insert the SVG images so that the HTML file is cleaner and easier to read - instead I had to comment each section and each SVG file so I could easily find the content I needed. Using SCSS for this project really helped me stay organised when creating this project as I could break separate components up into various files which allows for easier maintenance.</p>
                 </div>
 
                 <!--Creating a car together on Illustrator-->
@@ -238,9 +238,9 @@
                 <!--Introducing the text sequences-->
                 <div class="blog-body blog-container">
                     <h3 class="blog-body__titles">Animated text sequences</h3>
-                    <p>To get the text effect, all I needed was two CSS properties, being <code class = "code-example">stoke-dasharray</code> and <code class = "code-example">stroke-dashoffset</code>. I created the text sequences in Illustrator, and when creating the text I did not give them a fill colour, but I gave the text a larger stroke width. This allowed me to manipulate the text using with <code class = "code-example">stroke-dasharray</code> which creates a dashed stroke effect depending on the value you give – which then can give the effect of the text being drawn onto the screen.</p>
+                    <p>To get the text effect, all I needed was two CSS properties, being <code class = "code-example">stoke-dasharray</code> and <code class = "code-example">stroke-dashoffset</code>. I created the text sequences in Illustrator, and when creating the text, I did not give them a fill colour, but I gave the text a larger stroke width. This allowed me to manipulate the text using with <code class = "code-example">stroke-dasharray</code>, which is presentation attribute that can be used to define the pattern and gaps that paint the outline of a shape (Mozilla, no date). The <code class = "code-example">stroke-dasharray</code> value I gave to the texts SVG path made it look as though the text never changed pattern – but this can be manipulated.</p>
 
-                    <p>I then used <code class = "code-example">stroke-dashoffset</code> to make it look as the text has disappeared – but what has happened is that the stroke has not yet been drawn. To create the drawn text effect, I used CSS keyframes to state that I want the stroke to go from its given value of 500 back to its original value of 0.
+                    <p>In conjunction with <code class = "code-example">stroke-dasharray</code>, you can use <code class = "code-example">stroke-dashoffset</code> to define where along an SVG path in which the dash of a stroke will begin (Graham, 2016). I gave the <code class = "code-example">stroke-dashoffset</code> the same value as the <code class = "code-example">stroke-dasharray</code> to push the SVG path to the beginning of each letter to create the effect of letters being drawn in.
                     </p>
                 </div>
 
@@ -273,11 +273,7 @@
                 <!--Introducing the car sequences-->
                 <div class="blog-body blog-container">
                     <h3 class="blog-body__titles">Animating the car sequences</h3>
-                    <p>I began by absolutely positioning each element of the car sequences such as the engine smoke, exhaust smoke and the tires. I then had to set each element in the sequence to <code class = "code-example">opacity: 0</code> so that they can fade in when targeted with animation.</p>
-
-                    <p>Creating the animated car sequences required careful maniuplation of animation timings and delays to ensure the sequence flows smoothly. There were a total of seventeen elements to animate and control for the whole sequence.</p>
-
-                    <p>
+                    <p>I began by absolutely positioning each element of the car sequences such as the engine smoke, exhaust smoke and the tires. I then had to set each element in the sequence to <code class = "code-example">opacity: 0</code> so that they can fade in when targeting with animations. Creating the animated car sequences required careful manipulation of animation timings and delays to ensure the sequence flows smoothly. There was a total of seventeen elements to animate and control for the whole sequence.
                     </p>
                 </div>
 
@@ -331,9 +327,9 @@
                     <!--Introducing the car sequences-->
                     <div class="blog-body blog-container">
                         <h3 class="blog-body__titles">Future recommendations</h3>
-                        <p>The biggest frustration with using pure CSS to create an animated sequence is timing the animations so that they flow seamlessly. Using CSS for animation sequences, you have to manually add a delay to each animation whilst taking into consideration the previous animation time so that they flow after each other. As I had seventeen elements to animate into a sequence, using pure CSS was not flexible and was difficult to maintain because changing the timing or delay to one element meant I had to change the timing and delay for every element in the sequence.</p>
+                        <p>The biggest frustration with using pure CSS to create an animated sequence is timing the animations so that they flow seamlessly. Using CSS for animated sequences, you have to manually add a delay to each animation whilst taking into consideration the previous animation time so that they flow after each other. As I had seventeen elements to animate into a sequence, using pure CSS was not flexible and was difficult to maintain because changing the timing or delay to one element meant I had to change the timing and delay for every element in the sequence.</p>
 
-                        <p>In future projects I would be sure to use CSS keyframes to animate simple and short SVG sequences, but for large sequences I will take advantage of a JavaScript library like <a href="https://greensock.com/gsap/" class="blog__links">GreenSock</a></p>
+                        <p>In future projects I would be sure to use CSS keyframes to animate simple and short SVG sequences, but for large sequences I will take advantage of a JavaScript library like <a href="https://greensock.com/gsap/" class="blog__links">GreenSock</a>.</p>
                     </div>
 
                     <!--SVG animations timing-->
@@ -363,13 +359,19 @@
     <aside class="blog-body blog-container">
             <ul class="blog-body__references">
                     <li class="blog-body__references--item">
-                        Figma. (No Date) <i>Bitmap</i>. [Online] [Accessed on the 12th March 2020]  [Accessed on the 1st November 2019] <a href = "https://www.figma.com/dictionary/bitmap/">https://www.figma.com/dictionary/bitmap/</a>
-                    </li>
-                    <li class="blog-body__references--item">
                         Coyier, C. and Head, V. (2016) <i>Practical SVG</i>. New York: A Book Apart.</a>
                     </li>
                     <li class="blog-body__references--item">
                         Babich, N. (2017) <i>Functional Animation Helps Improve User Experience</i>. 11th January. Smashing Magazine. [Online] [Accessed on the 12th March 2020]  <a href = "https://www.smashingmagazine.com/2017/01/how-functional-animation-helps-improve-user-experience/">https://www.smashingmagazine.com/2017/01/how-functional-animation-helps-improve-user-experience/</a>
+                    </li>
+                    <li class="blog-body__references--item">
+                        Figma. (No Date) <i>Bitmap</i>. [Online] [Accessed on the 12th March 2020] <a href = "https://www.figma.com/dictionary/bitmap/">https://www.figma.com/dictionary/bitmap/</a>
+                    </li>
+                    <li class="blog-body__references--item">
+                        Graham, G. (2016) <i>stroke-dashoffset</i>. 12th Janurary. CSS-Tricks. [Online] [Accessed on the 30th March 2020] <a href = " https://css-tricks.com/almanac/properties/s/stroke-dashoffset/"> https://css-tricks.com/almanac/properties/s/stroke-dashoffset/</a>
+                    </li>
+                    <li class="blog-body__references--item">
+                        Mozilla. (No Date) <i>stoke-dasharray</i>. [Online] [Accessed on the 30th March 2020] <a href = "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dasharray">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dasharray</a>
                     </li>
                 </ul>
         </aside>
