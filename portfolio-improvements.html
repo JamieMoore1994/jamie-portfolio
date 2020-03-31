@@ -56,6 +56,8 @@
                 <h2 class="blog-content__title">I thought I finished building my first portfolio website - but there was plenty of issues to improve and fix</h2>
 
                 <p>So, I built my first ever portfolio website and there was a sense of relief, but as with any website there is always room for improvement and issues to fix – as was the case with my website.</p>
+
+                <p><a href="http://www.17076460.webdevmmu.uk/jamie-portfolio-backup/index.html" class = "blog__links" title = "First version of my portfolio website">View older version of my portfolio website</a>.</p>
             </div>
         </section>
 
@@ -158,7 +160,7 @@
                 <h3 class="blog-body__titles">Accessibility: SVG Images</h3>
                 <p>I was relativity new to using SVG images on my own projects and decided to use them to display my social media icons. I used free online service <a href="https://icomoon.io/" class = "blog__links" title = "IcoMoon website">IcoMoon</a> to get my social media icons – but the main drawback being that to view them when working on a project you need a live server as they do not display without one.</p>
 
-                <p>As I was new to SVG images I was not aware of how to make them accessible by providing text equivalent description of the images. According the the W3C specification, to meet the guideline to displaying an accessible SVG image is to provide a title - which is a human readable title for the image that is also accessible by a speech synthesizer – and provide a <code class = "code-example">desc</code>, which is a more longer and complete description of the image.</p>
+                <p>As I was new to SVG images I was not aware of how to make them accessible by providing text equivalent description of the images. According the the <a href="https://www.w3.org/TR/2000/NOTE-SVG-access-20000807/" class = "blog__links" title = "W3C accessible SVG specification">W3C specification</a>, to meet the guideline to displaying an accessible SVG image you should provide a <code class = "code-example">title</code> - which is a human readable title for the image that is also accessible by a speech synthesizer – and provide a <code class = "code-example">desc</code>, which is a longer and complete description of the image.</p>
 
                 <p>To improve this, I added a relevant title and description to each SVG image on the website and I will continue to do so on every project I use SVG images as accessible content is paramount.</p>
             </div>
@@ -323,6 +325,8 @@
                         <svg aria-labelledby="facebook"
                         class = "social__media-icon">
                         <title id = "facebook">Follow Jamie Moore on Facebook</title>
+                        <desc>Facebook logo</desc>
+                        <desc>The Facebook logo</desc>
                             <use xlink:href="assets/img/sprite.svg#icon-facebook"></use>
                         </svg>
                     </a>
@@ -332,6 +336,7 @@
                         <svg aria-labelledby="github"
                         class = "social__media-icon">
                         <title id = "github">Follow Jamie Moore on Github</title>
+                        <desc>The Github logo</desc>
                             <use xlink:href="assets/img/sprite.svg#icon-github"></use>
                         </svg>
                     </a>
@@ -341,6 +346,7 @@
                         <svg aria-labelledby="linked-in"
                         class = "social__media-icon">
                         <title id = "linked-in">Follow Jamie Moore on Linked In</title>
+                        <desc>The LinkedIn logo</desc>
                             <use xlink:href="assets/img/sprite.svg#icon-linkedin2"></use>
                         </svg>
                     </a>
@@ -350,6 +356,7 @@
                         <svg aria-labelledby="twitter"
                         class = "social__media-icon">
                         <title id = "twitter">Follow Jamie Moore on Twitter</title>
+                        <desc>The Twitter logo</desc>
                             <use xlink:href="assets/img/sprite.svg#icon-twitter"></use>
                         </svg>
                     </a>

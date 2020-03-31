@@ -1,4 +1,5 @@
 # jamie-portfolio
-My portfolio showcasing my recent projects and blog posts
+My first and very own portfolio website!
 
-Follow me through the process of bringing my portfolio website to life!
+# What can you find here ?
+Explore the files and commit history to gather an insight into my process creating my portfolio website.
