@@ -115,6 +115,10 @@
     &__headings + p {
         font-size: 1.3rem;
         color: $color-grey-dark;
+
+        @media screen and (min-width: 44em) {
+            font-size: 1.6rem;
+        }
     }
 
     &__skills {
