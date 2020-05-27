@@ -1,7 +1,8 @@
 <?php
     $page = "greensock-blog";
     $mainClass = "portfolio__header";
-    $title = "Greensock Animations | Website Design & Development | Jamie Moore";
+    $pageClass = "";
+    $title = "Greensock Animations - Website Design & Development - Jamie Moore";
     $description = "A blog documenting the journey to create an animated website using JavaScript animation Greensock. Follow the journey behind how I went from a total Greensock beginner, to becoming just about good enough to create an animated website.";
     $canonical = "https://www.jamiegmoore.co.uk/greensock.php";
     include "header.php";

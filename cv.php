@@ -1,6 +1,6 @@
 <?php
     $page = "cv";
-    $title = "CV | Website Design & Development | Jamie Moore";
+    $title = "CV - Website Design & Development - Jamie Moore";
     $mainClass = "cv__header";
     $description = "My CV page displaying my professional profile, my employable skills and my contact details to get in touch..";
     $canonical = "https://www.jamiegmoore.co.uk/cv.php";

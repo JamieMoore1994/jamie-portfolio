@@ -1,6 +1,6 @@
 <?php
     $page = "blog";
-    $title = "Blogs | Website Design & Development | Jamie Moore";
+    $title = "Blogs - Website Design & Development - Jamie Moore";
     $mainClass = "master__header";
     $pageClass = "blog";
     $description = "Jamie Moore's blogs page where you will find a range of issues and topics that I like to explore and talk about.";
@@ -22,7 +22,7 @@
                 
                 <!--The Industry Card-->
                 <li class="blogs__card-item">
-                        <a href = "industry-blog.html" title = "Go to my industry blog" class = "blog-links">
+                        <a href = "/industry-blog.php" title = "Go to my industry blog" class = "blog-links">
                             <figure class="blogs__photo">
                                 <img src="assets/img/kelly-robinson-LKkiME8oWKo-unsplash_1.JPG" alt="Skyline view of Manchester city centre buildings">
                                 <h2 class = "blogs__intro-title">The Industry</h2>

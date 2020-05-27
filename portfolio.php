@@ -2,7 +2,7 @@
     $page = "portfolio";
     $mainClass = "master__header";
     $pageClass = "blog";
-    $title = "Portfolio | Website Design & Development | Jamie Moore";
+    $title = "Portfolio - Website Design & Development - Jamie Moore";
     $description = "Have a look at Jamie Moore's recent projects and find out what he has to say about them such as his own critiques and what he would do better next time.";
     $canonical = "https://www.jamiegmoore.co.uk/portfolio.php";
     include "header.php";

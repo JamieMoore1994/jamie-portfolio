@@ -2,7 +2,7 @@
     $page = "plan-it";
     $mainClass = "projects__bg";
     $pageClass = "projects__examples";
-    $title = "Plan It | Website Design & Development | Jamie Moore";
+    $title = "Plan It - Website Design & Development - Jamie Moore";
     $description = "Have a look into my thoughts about the process behind the Plan It project and my critiques on the project.";
     $canonical = "https://www.jamiegmoore.co.uk/plan-it.php";
     include "header.php";

@@ -1,6 +1,7 @@
 <?php
     $page = "home";
     $mainClass = "master__header";
+    $pageClass = "";
     $title = "Website Design & Development | Jamie Moore";
     $description = "Jamie Moore is a front end developer based in Manchester that specialises in building accessibile, usable and responsive websites.";
     $canonical = "https://www.jamiegmoore.co.uk/index.php";

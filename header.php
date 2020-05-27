@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang = en-gb>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167817876-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167817876-1');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> <?php echo $title; ?> </title>
@@ -35,7 +45,7 @@
     <nav class="master__navigation">
         <ul class="master__nav">
             <li>
-                <a href="/" title = "Homepage" class = "master__nav-links <?php if($page=='home'){echo 'active';}?>">Home</a>
+                <a href="/index.php" title = "Homepage" class = "master__nav-links <?php if($page=='home'){echo 'active';}?>">Home</a>
             </li>
             <li>
                 <a href="/portfolio.php" title = "Portfolio" class = "master__nav-links <?php if($page=='portfolio'){echo 'active';}?>">Portfolio</a>

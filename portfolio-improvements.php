@@ -1,7 +1,8 @@
 <?php
     $page = "portfolio-improvements";
     $mainClass = "portfolio__header";
-    $title = "Portfolio Improvements | Website Design & Development | Jamie Moore";
+    $pageClass = "";
+    $title = "Portfolio Improvements - Website Design & Development - Jamie Moore";
     $description = "Read about the issues that arised following on from building my first portfolio website and how I fixed those issues.";
     $canonical = "https://www.jamiegmoore.co.uk/portfolio-improvements.php";
     include "header.php";

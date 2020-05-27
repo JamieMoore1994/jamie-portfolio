@@ -1,7 +1,8 @@
 <?php
     $page = "svg-blog";
     $mainClass = "portfolio__header";
-    $title = "SVG Animations | Website Design & Development | Jamie Moore";
+    $pageClass = "";
+    $title = "SVG Animations - Website Design & Development - Jamie Moore";
     $description = "Follow me to understand the process I went through to learn about SVG images and how I created an SVG animated sequence.";
     $canonical = "https://www.jamiegmoore.co.uk/svg-blog.php";
     include "header.php";

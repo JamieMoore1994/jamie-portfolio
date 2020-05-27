@@ -2,7 +2,7 @@
     $page = "live-music";
     $mainClass = "projects__bg";
     $pageClass = "projects__examples";
-    $title = "Live Music | Website Design & Development | Jamie Moore";
+    $title = "Live Music - Website Design & Development - Jamie Moore";
     $description = "Live Music in Manchester offers various genres of live music you can go to see in the Manchester City Centre.";
     $canonical = "https://www.jamiegmoore.co.uk/live-music.php";
     include "header.php";
