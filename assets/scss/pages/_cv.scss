@@ -2,11 +2,7 @@
 .cv__header {
     background-image: url(../assets/img/cv-bg.svg);
     background-size: cover;
-    height: 70vh;
-
-    @media screen and (min-width: 30em) {
-        height: 50vh;
-    }
+    height: 35vh;
 }
 
 .cv__container {
@@ -15,31 +11,25 @@
     align-items: center;
     flex-direction: column;
     padding: 3.5rem 0 0 0;
+    position: relative;
 }
 
-.cv__title {
+.cv__job {
     text-transform: uppercase;
     text-align: center;
-    font-size: 4rem;
+    display: inline-block;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     font-weight: 700;
     line-height: 1.2;
     color: $color-grey-light;
     margin-bottom: 1rem;
-}
-
-.cv__job {
-    font-size: 1.7rem;
-    color: $color-grey-light-2;
-    letter-spacing: 1.5px;
-    font-weight: 300;
-    padding: .5rem 0;
     position: relative;
 
-    &::before {
+    &:before {
         content: '';
         position: absolute;
-        top: 0;
+        top: -10%;
         right: 0;
         height: 2px;
         width: 100%;
@@ -47,16 +37,25 @@
         animation: animateJobTop 800ms ease;
     }
 
-    &::after {
+    &:after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: -10%;
         left: 0;
         height: 2px;
         width: 100%;
         background-color: $color-grey-light;
         animation: animateJobBottom 800ms ease;
     }
+}
+
+.cv__title {
+    font-size: 1.5rem;
+    color: $color-grey-light-2;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    padding: .5rem 0;
+    position: relative;
 }
 
 @keyframes animateJobTop {
@@ -229,3 +228,34 @@
         }
     }
 }
+
+/*------------------------------*/
+// Media queries
+
+// 750px
+@media screen and (min-width: $m) {
+
+        .cv__job {
+            font-size: 3rem;
+        }
+
+        .cv__title {
+            font-size: 1.8rem;
+        }
+}
+
+/*------------------------------*/
+
+// 1200px
+@media screen and (min-width: $xxl) {
+
+    .cv__job {
+        font-size: 3.3rem;
+    }
+
+    .cv__title {
+        font-size: 2rem;
+    }
+}
+
+/*------------------------------*/

@@ -1,43 +1,11 @@
-<!doctype html>
-<html lang = en-gb>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SVG Animation | Jamie Moore</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name = "description" content= "Follow me to understand the process I went through to learn about SVG images and how I created an SVG animated sequence.">
-    <link rel="stylesheet" type="text/css" media="screen" href="dest/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7cLobster+Two%7cPoppins&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/jpg" href="img/site-logo.jpg">
-    <link rel = "canonical" href = "http://www.17076460.webdevmmu.uk/jamie-portfolio/jamie-portfolio/portfolio-blog.html">
-
-    <!--Copied code below from stack overflow -->
-
-    <!-- iPhone(first generation or 2G), iPhone 3G, iPhone 3GS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/site-logo.jpg">
-    <!-- iPad and iPad mini @1x -->
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/site-logo.jpg">
-    <!-- iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s, iPhone 6, iPhone 6s, iPhone 7, iPhone 7s, iPhone8 -->
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/site-logo.jpg">
-    <!-- iPad and iPad mini @2x -->
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/site-logo.jpg">
-    <!-- iPad Pro -->
-    <link rel="apple-touch-icon" sizes="167x167" href="assets/img/site-logo.jpg">
-    <!-- iPhone X, iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/site-logo.jpg">
-</head>
-<body>
-    <!--Accessibility Button-->
-    <a href="#content" class="skip-link">Skip To Content</a>
-    
-    <header class = "portfolio__header" id = "top">
-        <nav class="master__navigation">
-            <ul class="master__nav">
-                <li><a href="index.html" title = "Homepage" class = "master__nav-links">Home</a></li>
-                <li><a href="blog.html" title = "Blog" class = "master__nav-links">Blog</a></li>
-                <li><a href="portfolio.html" title = "Portfolio" class = "master__nav-links">Portfolio</a></li>
-            </ul>
-        </nav>
+<?php
+    $page = "svg-blog";
+    $mainClass = "portfolio__header";
+    $title = "SVG Animations | Website Design & Development | Jamie Moore";
+    $description = "Follow me to understand the process I went through to learn about SVG images and how I created an SVG animated sequence.";
+    $canonical = "https://www.jamiegmoore.co.uk/svg-blog.php";
+    include "header.php";
+?>
         <h1 class = "portfolio__header-title">Animating with SVG</h1>
     </header>
 
@@ -114,7 +82,7 @@
 
             <div class="blog-body blog-container">
                 <h3 class="blog-body__titles">Learning about SVG images and Adobe Illustrator</h3>
-                <p>The Illustrator interface can be overwhelming for beginners, so to gain more exposure to using illustrator, I completed a five-hour LinkedIn Learning course on <a href="https://www.linkedin.com/learning/illustrator-2020-essential-training/clipping-masks?u=36102708" class="blog__links" title = "LinkedIn Learning Adobe Illustrator course">Illustrator essential training</a>. Additionally, I gained more of an insight into how to correctly create and export SVG images from illustrator by completing an <a href="" class="blog__links" title = "LinkedIn Learning SVG Graphics for the web course">SVG graphics for the web course.</a></p>
+                <p>The Illustrator interface can be overwhelming for beginners, so to gain more exposure to using illustrator, I completed a five-hour LinkedIn Learning course on <a href="https://www.linkedin.com/learning/illustrator-2020-essential-training/clipping-masks?u=36102708" class="blog__links" title = "LinkedIn Learning Adobe Illustrator course">Illustrator essential training</a>. Additionally, I gained more of an insight into how to correctly create and export SVG images from illustrator by completing an <a href="https://www.linkedin.com/learning/svg-graphics-for-the-web-with-illustrator/next-steps?u=36102708" class="blog__links" title = "LinkedIn Learning SVG Graphics for the web course">SVG graphics for the web course.</a></p>
             </div>
 
             <div class="blog-container--large">
@@ -141,7 +109,7 @@
 
             <div class="blog-body blog-container">
                 <h3 class="blog-body__titles">Naming groups and layers with Illustrator</h3>
-                <p>When creating SVG images in Illustrator for the web it is crucial to group and name relevant content together that you know will be animated. This is makes it easier to find the content you want to animate in the SVG code, because if you don’t do this, Illustrator generates ID names automatically for grouped content and layers which leads to confusion when trying to find the element you want to animate.</p>
+                <p>When creating SVG images in Illustrator for the web it is crucial to group and name relevant content together that you know will be animated. This is makes it easier to find the content you want to animate in the SVG code, because if you don’t do this, Illustrator generates ID names automatically for grouped content and layers which leads to confusion when trying to find the elements you want to animate.</p>
             </div>
 
             <div class="blog-container--large">
@@ -188,7 +156,7 @@
                         <figure class="blog-body__figures">
                             <img src="assets/img/blog-photos/car-tutorial-two.jpg" alt="A car that has been created with on Illustator">
                             <figcaption class = "blog-body__captions">
-                                Step Three - Highlight the outside rectanglen of the car light then hold the option key (alt on windows) and tap the highlighted area.
+                                Step Three - Highlight the outside rectangle of the car light then hold the option key (alt on windows) and tap the highlighted area.
                             </figcaption>
                         </figure>
                     </li>
@@ -378,74 +346,7 @@
                 </ul>
         </aside>
 
-        <footer class="master__footer">
-        <div class="master__footer-container">
-
-        <div class="social__media">
-            <h3 class="social__title">Get in Touch on Social Media</h3>
-            <ul class="social__media-icons">
-
-                <!--Ico mood svg icons for social media, learn't from Chris Coyier book practival svg-->
-                <li>
-                    <a href = "https://www.facebook.com/jamie.moore.5245" class = "social__icon">
-                        <svg aria-labelledby="facebook"
-                        class = "social__media-icon">
-                        <title id = "facebook">Follow Jamie Moore on Facebook</title>
-                        <desc>Facebook logo</desc>
-                        <desc>The Facebook logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href = "https://github.com/JamieMoore1994" class = "social__icon">
-                        <svg aria-labelledby="github"
-                        class = "social__media-icon">
-                        <title id = "github">Follow Jamie Moore on Github</title>
-                        <desc>The Github logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-github"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href = "https://www.linkedin.com/feed/" class = "social__icon">
-                        <svg aria-labelledby="linked-in"
-                        class = "social__media-icon">
-                        <title id = "linked-in">Follow Jamie Moore on Linked In</title>
-                        <desc>The LinkedIn logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-linkedin2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href = "https://twitter.com/home?logout=1573165667663&prefetchTimestamp=1573165667668" class = "social__icon">
-                        <svg aria-labelledby="twitter"
-                        class = "social__media-icon">
-                        <title id = "twitter">Follow Jamie Moore on Twitter</title>
-                        <desc>The Twitter logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                </ul>
-            </div>
-
-                <div class="footer__useful">
-                    <h4 class="footer__links-title">Some Useful Links</h4>
-                        <ul class="footer__links">
-                            <li class="footer__link"><a href="index.html" title = "Homepage">Home</a></li>
-                            <li class="footer__link"><a href="blog.html" title = "Blogs page">Blogs</a></li>
-                            <li class="footer__link"><a href="portfolio.html" title = "Portfolio page">Portolio</a></li>
-                            <li class="footer__link"><a href="cv.html" title = "My CV">CV</a></li>
-                        </ul>
-                </div>
-            </div>
-            
-            <div class="footer__disclaimer">
-                <p class="master__footer-text">Copyright &copy; Jamie Moore - 2020</p>
-            </div>
-            <a href = "#top" class = "btn back-top" title = "Top of page">Back To Top</a>
-    </footer>
-</body>
-</html>
+<?php
+    include "footer.php";
+?>
     

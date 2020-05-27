@@ -1,43 +1,11 @@
-<!doctype html>
-<html lang = en-gb>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Greensock Animations | Jamie Moore</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name = "description" content= "A blog documenting the journey to create an animated website using JavaScript animation Greensock. Follow the journey behind how I went from a total Greensock beginner, to becoming just about good enough to create an animated website.">
-    <link rel="stylesheet" type="text/css" media="screen" href="dest/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7cLobster+Two%7cPoppins&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/jpg" href="img/site-logo.jpg">
-    <link rel = "canonical" href = "http://www.17076460.webdevmmu.uk/jamie-portfolio/jamie-portfolio/greensock-blog.html">
-
-    <!--Copied code below from stack overflow -->
-
-    <!-- iPhone(first generation or 2G), iPhone 3G, iPhone 3GS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/site-logo.jpg">
-    <!-- iPad and iPad mini @1x -->
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/site-logo.jpg">
-    <!-- iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s, iPhone 6, iPhone 6s, iPhone 7, iPhone 7s, iPhone8 -->
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/site-logo.jpg">
-    <!-- iPad and iPad mini @2x -->
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/site-logo.jpg">
-    <!-- iPad Pro -->
-    <link rel="apple-touch-icon" sizes="167x167" href="assets/img/site-logo.jpg">
-    <!-- iPhone X, iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/site-logo.jpg">
-</head>
-<body>
-    <!--Accessibility Button-->
-    <a href="#content" class="skip-link">Skip To Content</a>
-    
-    <header class = "portfolio__header" id = "top">
-        <nav class="master__navigation">
-            <ul class="master__nav">
-                <li><a href="index.html" title = "Homepage" class = "master__nav-links">Home</a></li>
-                <li><a href="blog.html" title = "Blog" class = "master__nav-links">Blog</a></li>
-                <li><a href="portfolio.html" title = "Portfolio" class = "master__nav-links">Portfolio</a></li>
-            </ul>
-        </nav>
+<?php
+    $page = "greensock-blog";
+    $mainClass = "portfolio__header";
+    $title = "Greensock Animations | Website Design & Development | Jamie Moore";
+    $description = "A blog documenting the journey to create an animated website using JavaScript animation Greensock. Follow the journey behind how I went from a total Greensock beginner, to becoming just about good enough to create an animated website.";
+    $canonical = "https://www.jamiegmoore.co.uk/greensock.php";
+    include "header.php";
+?>
         <h1 class = "portfolio__header-title">An animated website using Greensock</h1>
     </header>
 
@@ -83,7 +51,7 @@
 
                 <p>Animations for the web – when used in the right context – can significantly improve the user experience for a user when using your website (Diaz, 2018). By learning GreenSock, it will improve my skillset as a developer and allow me to create high quality animations that can provide unique experiences for users who interact with websites create – as well as improving the user experience.</p>
 
-                <p>Prior to this project I have little knowledge in Greensock and a basic understanding of JavaScript – which helped with adapting to GreenSock quicker. I have only ever created animations using CSS Keyframes and transitions.</p>
+                <p>Prior to this project I had little knowledge in Greensock and a basic understanding of JavaScript – which helped with adapting to GreenSock quicker. I have only ever created animations using CSS Keyframes and transitions.</p>
             </div>
 
             <div class="blog-body blog-container">
@@ -182,13 +150,13 @@
             </div>
 
             <div class="blog-body blog-container">
-                <p>The key to a smooth timeline is adjusting the timing of each Tween. After some Tweens you can see <code class = "code-example">'-=0.5'</code>, this is me telling that Tween to start minus 200ms before it was mean't to in order for it to smoothly transition after the previous animation.</p>
+                <p>The key to a smooth timeline is adjusting the timing of each Tween. After some Tweens you can see <code class = "code-example">'-=0.5'</code>, this is me telling that Tween to start minus 200ms before it was due to start in order for it to smoothly transition after the previous animation.</p>
             </div>
 
             <!--Introducing the car sequences-->
             <div class="blog-body blog-container">
                 <h3 class="blog-body__titles">Evaluation</h3>
-                <p>Although I managed to successfully create the animations I wanted to, there are many areas in which this project can be improved.</p>
+                <p>Although I managed to successfully create the animations I wanted to, their are many areas in which this project can be improved.</p>
 
                 <p>Due to me having little knowledge in JavaScript, the code for selecting each section I wanted to animate could have been reduced drastically. There is a term web developers are familiar with, and it’s the dry principle – which basically means don’t repeat your code (The Valuable Dev, 2019). I repeated each variable inside the planet functions but adjusted the planet name and with the project deadline approaching as well as well as my lack of experience with JavaScript, I could not come up with a cleaner solution to only declare my variables once but adjust the planet name inside the functions.</p>
             </div>
@@ -268,74 +236,6 @@
                 </ul>
         </aside>
 
-        <footer class="master__footer">
-        <div class="master__footer-container">
-
-        <div class="social__media">
-            <h3 class="social__title">Get in Touch on Social Media</h3>
-            <ul class="social__media-icons">
-
-                <!--Ico mood svg icons for social media, learn't from Chris Coyier book practival svg-->
-                <li>
-                    <a href = "https://www.facebook.com/jamie.moore.5245" class = "social__icon">
-                        <svg aria-labelledby="facebook"
-                        class = "social__media-icon">
-                        <title id = "facebook">Follow Jamie Moore on Facebook</title>
-                        <desc>Facebook logo</desc>
-                        <desc>The Facebook logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href = "https://github.com/JamieMoore1994" class = "social__icon">
-                        <svg aria-labelledby="github"
-                        class = "social__media-icon">
-                        <title id = "github">Follow Jamie Moore on Github</title>
-                        <desc>The Github logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-github"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href = "https://www.linkedin.com/feed/" class = "social__icon">
-                        <svg aria-labelledby="linked-in"
-                        class = "social__media-icon">
-                        <title id = "linked-in">Follow Jamie Moore on Linked In</title>
-                        <desc>The LinkedIn logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-linkedin2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href = "https://twitter.com/home?logout=1573165667663&prefetchTimestamp=1573165667668" class = "social__icon">
-                        <svg aria-labelledby="twitter"
-                        class = "social__media-icon">
-                        <title id = "twitter">Follow Jamie Moore on Twitter</title>
-                        <desc>The Twitter logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                </ul>
-            </div>
-
-                <div class="footer__useful">
-                    <h4 class="footer__links-title">Some Useful Links</h4>
-                        <ul class="footer__links">
-                            <li class="footer__link"><a href="index.html" title = "Homepage">Home</a></li>
-                            <li class="footer__link"><a href="blog.html" title = "Blogs page">Blogs</a></li>
-                            <li class="footer__link"><a href="portfolio.html" title = "Portfolio page">Portolio</a></li>
-                            <li class="footer__link"><a href="cv.html" title = "My CV">CV</a></li>
-                        </ul>
-                </div>
-            </div>
-            
-            <div class="footer__disclaimer">
-                <p class="master__footer-text">Copyright &copy; Jamie Moore - 2020</p>
-            </div>
-            <a href = "#top" class = "btn back-top" title = "Top of page">Back To Top</a>
-    </footer>
-</body>
-</html>
-    
+<?php
+    include "footer.php"
+?>

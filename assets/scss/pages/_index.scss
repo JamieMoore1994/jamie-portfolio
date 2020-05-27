@@ -1,18 +1,7 @@
-
 .master__header {
     background-image: url(../assets/img/main-bg.svg);
     background-size: cover;
-    height: 90vh;
-
-    @media screen and (min-width: 21em) {
-        height: 75vh;
-    }
-    
-    @media screen and (min-width: 90em) {
-        height: 68vh;
-    }
-
-    
+    height: 55vh;
 
     .master__heading {
         font-size: 4rem;
@@ -20,7 +9,7 @@
         font-weight: 900;
         color: $color-grey-light;
         text-transform: uppercase;
-        padding: 4rem 1rem 1rem 1rem; 
+        padding: 2rem 1rem 1rem 1rem; 
         letter-spacing: 2px;
 
         @media screen and (min-width: 46em) {
@@ -198,7 +187,9 @@
 
     &__icon {
         grid-row: 1 / span 2;
-        color: $color-grey-light;
+        fill: $color-grey-light;
+        height: 4rem;
+        width: 4rem;
     }
 
     &__description {
@@ -243,6 +234,12 @@
         margin-right: 2rem;
         font-size: 1.9rem;
         line-height: 1.2;
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: $color-primary;
     }
 
     &__form-container {
